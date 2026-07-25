@@ -51,6 +51,12 @@ export class TodoController {
     return this.todoService.toggle(id);
   }
 
+  @Delete('completed')
+  @HttpCode(HttpStatus.OK)
+  clearCompleted() {
+    return this.todoService.clearCompleted();
+  }
+
   @Delete(':id')
   @HttpCode(HttpStatus.NO_CONTENT)
   remove(@Param('id') id: string) {

@@ -80,4 +80,24 @@ describe('TodoService', () => {
   it('throws on missing todo', () => {
     expect(() => service.findOne('nonexistent')).toThrow(NotFoundException);
   });
+
+  it('clearCompleted removes completed todos and returns deleted count', () => {
+    const t1 = service.create({ title: 'One' });
+    const t2 = service.create({ title: 'Two' });
+    const t3 = service.create({ title: 'Three' });
+    service.toggle(t1.id);
+    service.toggle(t2.id);
+
+    const result = service.clearCompleted();
+
+    expect(result).toEqual({ deleted: 2 });
+    const remaining = service.findAll();
+    expect(remaining).toHaveLength(1);
+    expect(remaining[0].id).toBe(t3.id);
+  });
+
+  it('clearCompleted returns zero when no completed todos exist', () => {
+    service.create({ title: 'Active' });
+    expect(service.clearCompleted()).toEqual({ deleted: 0 });
+  });
 });
