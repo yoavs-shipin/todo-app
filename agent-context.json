@@ -1,0 +1,20 @@
+{
+  "files": {
+    "prd": {
+      "path": "docs/PRD.md",
+      "purpose": "Product requirements: features, user flows, API surface, priorities"
+    },
+    "spec": {
+      "path": "docs/spec.md",
+      "purpose": "Technical design: architecture, data model, API contracts, technology decisions"
+    },
+    "regression_runbook": {
+      "path": "docs/regression-test-runbook.md",
+      "purpose": "Regression test checklist for browser-based and API validation"
+    },
+    "readme": {
+      "path": "README.md",
+      "purpose": "Setup instructions, architecture overview, developer guide"
+    }
+  }
+}
