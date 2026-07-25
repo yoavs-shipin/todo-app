@@ -4,6 +4,7 @@ import { api } from './api';
 import { TodoItem } from './components/TodoItem';
 import { AddTodoForm } from './components/AddTodoForm';
 import { FilterBar } from './components/FilterBar';
+import { SearchBar } from './components/SearchBar';
 import styles from './App.module.css';
 
 type Filter = 'all' | 'active' | 'completed';
@@ -12,17 +13,33 @@ export default function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [filter, setFilter] = useState<Filter>('all');
   const [priorityFilter, setPriorityFilter] = useState<Priority | ''>('');
+  const [search, setSearch] = useState('');
+  const [debouncedSearch, setDebouncedSearch] = useState('');
   const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    const timer = setTimeout(() => setDebouncedSearch(search), 300);
+    return () => clearTimeout(timer);
+  }, [search]);
+
   const load = useCallback(async () => {
-    const params: { completed?: boolean; priority?: Priority } = {};
+    const params: { completed?: boolean; priority?: Priority; search?: string } = {};
     if (filter === 'active') params.completed = false;
     if (filter === 'completed') params.completed = true;
     if (priorityFilter) params.priority = priorityFilter;
+    if (debouncedSearch) params.search = debouncedSearch;
     const data = await api.list(params);
     setTodos(data);
     setLoading(false);
-  }, [filter, priorityFilter]);
+  }, [filter, priorityFilter, debouncedSearch]);
+
+  const handleSearchChange = useCallback((value: string) => {
+    setSearch(value);
+  }, []);
+
+  const handleSearchClear = useCallback(() => {
+    setSearch('');
+  }, []);
 
   useEffect(() => {
     load();
@@ -66,6 +83,12 @@ export default function App() {
       </header>
 
       <AddTodoForm onAdd={handleAdd} />
+
+      <SearchBar
+        value={search}
+        onChange={handleSearchChange}
+        onClear={handleSearchClear}
+      />
 
       <FilterBar
         filter={filter}

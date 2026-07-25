@@ -16,11 +16,12 @@ async function request<T>(url: string, init?: RequestInit): Promise<T> {
 }
 
 export const api = {
-  list: (filter?: { completed?: boolean; priority?: Priority }) => {
+  list: (filter?: { completed?: boolean; priority?: Priority; search?: string }) => {
     const params = new URLSearchParams();
     if (filter?.completed !== undefined)
       params.set('completed', String(filter.completed));
     if (filter?.priority) params.set('priority', filter.priority);
+    if (filter?.search) params.set('search', filter.search);
     const qs = params.toString();
     return request<Todo[]>(`${BASE}${qs ? `?${qs}` : ''}`);
   },
