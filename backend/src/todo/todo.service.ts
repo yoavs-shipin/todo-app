@@ -69,4 +69,17 @@ export class TodoService {
     const todo = this.findOne(id);
     return this.update(id, { completed: !todo.completed });
   }
+
+  clearCompleted(): { deleted: number } {
+    const idsToDelete: string[] = [];
+    for (const [id, todo] of this.todos) {
+      if (todo.completed) {
+        idsToDelete.push(id);
+      }
+    }
+    for (const id of idsToDelete) {
+      this.todos.delete(id);
+    }
+    return { deleted: idsToDelete.length };
+  }
 }
