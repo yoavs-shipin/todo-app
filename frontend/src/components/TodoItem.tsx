@@ -6,7 +6,7 @@ interface Props {
   todo: Todo;
   onToggle: (id: string) => void;
   onDelete: (id: string) => void;
-  onUpdate: (id: string, data: Partial<Pick<Todo, 'title' | 'description' | 'priority'>>) => void;
+  onUpdate: (id: string, data: Partial<Pick<Todo, 'title' | 'description' | 'priority' | 'dueDate'>>) => void;
 }
 
 const PRIORITY_LABELS: Record<Priority, string> = {
@@ -15,16 +15,36 @@ const PRIORITY_LABELS: Record<Priority, string> = {
   low: 'Low',
 };
 
+function formatDueDate(dueDate: string): string {
+  return new Date(dueDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+function toInputDate(dueDate: string | null): string {
+  if (!dueDate) return '';
+  return dueDate.slice(0, 10);
+}
+
+function isOverdue(dueDate: string, completed: boolean): boolean {
+  if (completed) return false;
+  const due = new Date(dueDate);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  due.setHours(0, 0, 0, 0);
+  return due < today;
+}
+
 export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
   const [editing, setEditing] = useState(false);
   const [editTitle, setEditTitle] = useState(todo.title);
   const [editDesc, setEditDesc] = useState(todo.description);
+  const [editDueDate, setEditDueDate] = useState(toInputDate(todo.dueDate));
 
   const handleSave = () => {
     if (!editTitle.trim()) return;
     onUpdate(todo.id, {
       title: editTitle.trim(),
       description: editDesc.trim(),
+      dueDate: editDueDate || null,
     });
     setEditing(false);
   };
@@ -32,6 +52,7 @@ export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
   const handleCancel = () => {
     setEditTitle(todo.title);
     setEditDesc(todo.description);
+    setEditDueDate(toInputDate(todo.dueDate));
     setEditing(false);
   };
 
@@ -72,6 +93,13 @@ export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
               onChange={(e) => setEditDesc(e.target.value)}
               placeholder="Description"
             />
+            <input
+              className={styles.editInput}
+              type="date"
+              value={editDueDate}
+              onChange={(e) => setEditDueDate(e.target.value)}
+              aria-label="Due date"
+            />
             <div className={styles.editActions}>
               <button className={styles.saveBtn} onClick={handleSave}>Save</button>
               <button className={styles.cancelBtn} onClick={handleCancel}>Cancel</button>
@@ -84,6 +112,13 @@ export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
             </span>
             {todo.description && (
               <span className={styles.description}>{todo.description}</span>
+            )}
+            {todo.dueDate && (
+              <span
+                className={`${styles.dueDate} ${isOverdue(todo.dueDate, todo.completed) ? styles.overdue : ''}`}
+              >
+                Due: {formatDueDate(todo.dueDate)}
+              </span>
             )}
           </>
         )}

@@ -3,22 +3,24 @@ import type { Priority } from '../types';
 import styles from './AddTodoForm.module.css';
 
 interface Props {
-  onAdd: (title: string, description: string, priority: Priority) => void;
+  onAdd: (title: string, description: string, priority: Priority, dueDate?: string) => void;
 }
 
 export function AddTodoForm({ onAdd }: Props) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [priority, setPriority] = useState<Priority>('medium');
+  const [dueDate, setDueDate] = useState('');
   const [expanded, setExpanded] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!title.trim()) return;
-    onAdd(title.trim(), description.trim(), priority);
+    onAdd(title.trim(), description.trim(), priority, dueDate || undefined);
     setTitle('');
     setDescription('');
     setPriority('medium');
+    setDueDate('');
     setExpanded(false);
   };
 
@@ -64,6 +66,15 @@ export function AddTodoForm({ onAdd }: Props) {
             <option value="medium">Medium priority</option>
             <option value="high">High priority</option>
           </select>
+          <label className={styles.dateLabel}>
+            Due date
+            <input
+              className={styles.dateInput}
+              type="date"
+              value={dueDate}
+              onChange={(e) => setDueDate(e.target.value)}
+            />
+          </label>
         </div>
       )}
     </form>

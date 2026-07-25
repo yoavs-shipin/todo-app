@@ -28,8 +28,8 @@ export default function App() {
     load();
   }, [load]);
 
-  const handleAdd = async (title: string, description: string, priority: Priority) => {
-    await api.create({ title, description: description || undefined, priority });
+  const handleAdd = async (title: string, description: string, priority: Priority, dueDate?: string) => {
+    await api.create({ title, description: description || undefined, priority, dueDate });
     load();
   };
 
@@ -43,7 +43,7 @@ export default function App() {
     load();
   };
 
-  const handleUpdate = async (id: string, data: Partial<Pick<Todo, 'title' | 'description' | 'priority'>>) => {
+  const handleUpdate = async (id: string, data: Partial<Pick<Todo, 'title' | 'description' | 'priority' | 'dueDate'>>) => {
     await api.update(id, data);
     load();
   };

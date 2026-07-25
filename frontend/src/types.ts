@@ -6,6 +6,7 @@ export interface Todo {
   description: string;
   completed: boolean;
   priority: Priority;
+  dueDate: string | null;
   createdAt: string;
   updatedAt: string;
 }
