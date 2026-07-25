@@ -37,6 +37,7 @@ export class TodoService {
       description: dto.description ?? '',
       completed: false,
       priority: dto.priority ?? TodoPriority.MEDIUM,
+      dueDate: dto.dueDate ?? null,
       createdAt: now,
       updatedAt: now,
     };
