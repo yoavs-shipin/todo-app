@@ -36,4 +36,7 @@ export const api = {
 
   remove: (id: string) =>
     request<void>(`${BASE}/${id}`, { method: 'DELETE' }),
+
+  clearCompleted: () =>
+    request<{ deleted: number }>(`${BASE}/completed`, { method: 'DELETE' }),
 };

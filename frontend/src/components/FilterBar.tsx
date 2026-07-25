@@ -8,6 +8,8 @@ interface Props {
   onFilterChange: (f: Filter) => void;
   priority: Priority | '';
   onPriorityChange: (p: Priority | '') => void;
+  completedCount: number;
+  onClearCompleted: () => void;
 }
 
 const FILTERS: { value: Filter; label: string }[] = [
@@ -16,7 +18,7 @@ const FILTERS: { value: Filter; label: string }[] = [
   { value: 'completed', label: 'Done' },
 ];
 
-export function FilterBar({ filter, onFilterChange, priority, onPriorityChange }: Props) {
+export function FilterBar({ filter, onFilterChange, priority, onPriorityChange, completedCount, onClearCompleted }: Props) {
   return (
     <div className={styles.bar}>
       <div className={styles.tabs}>
@@ -41,6 +43,12 @@ export function FilterBar({ filter, onFilterChange, priority, onPriorityChange }
         <option value="medium">Medium</option>
         <option value="low">Low</option>
       </select>
+
+      {completedCount > 0 && (
+        <button type="button" className={styles.clearBtn} onClick={onClearCompleted}>
+          Clear completed ({completedCount})
+        </button>
+      )}
     </div>
   );
 }

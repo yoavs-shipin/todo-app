@@ -43,3 +43,16 @@
   font-size: 0.8125rem;
   outline: none;
 }
+
+.clearBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  margin-left: auto;
+}
+
+.clearBtn:hover {
+  text-decoration: underline;
+  color: var(--danger);
+}

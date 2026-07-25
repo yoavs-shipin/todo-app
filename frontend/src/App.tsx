@@ -48,7 +48,13 @@ export default function App() {
     load();
   };
 
+  const handleClearCompleted = async () => {
+    await api.clearCompleted();
+    load();
+  };
+
   const activeCount = todos.filter((t) => !t.completed).length;
+  const completedCount = todos.filter((t) => t.completed).length;
 
   return (
     <div className={styles.container}>
@@ -66,6 +72,8 @@ export default function App() {
         onFilterChange={setFilter}
         priority={priorityFilter}
         onPriorityChange={setPriorityFilter}
+        completedCount={completedCount}
+        onClearCompleted={handleClearCompleted}
       />
 
       <main className={styles.list}>
