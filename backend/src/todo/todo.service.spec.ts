@@ -58,6 +58,34 @@ describe('TodoService', () => {
     expect(service.findAll({ priority: TodoPriority.HIGH })).toHaveLength(1);
   });
 
+  it('filters by search (case-insensitive)', () => {
+    service.create({ title: 'Buy groceries' });
+    service.create({ title: 'Buy milk' });
+    service.create({ title: 'Read book' });
+    const results = service.findAll({ search: 'buy' });
+    expect(results).toHaveLength(2);
+    expect(results.map((t) => t.title)).toEqual(
+      expect.arrayContaining(['Buy groceries', 'Buy milk']),
+    );
+  });
+
+  it('combines search and priority filters', () => {
+    service.create({ title: 'Buy groceries', priority: TodoPriority.HIGH });
+    service.create({ title: 'Buy milk', priority: TodoPriority.LOW });
+    service.create({ title: 'Read book' });
+    const results = service.findAll({
+      search: 'buy',
+      priority: TodoPriority.HIGH,
+    });
+    expect(results).toHaveLength(1);
+    expect(results[0].title).toBe('Buy groceries');
+  });
+
+  it('returns empty array when search matches nothing', () => {
+    service.create({ title: 'Buy groceries' });
+    expect(service.findAll({ search: 'nonexistent' })).toEqual([]);
+  });
+
   it('updates a todo', () => {
     const todo = service.create({ title: 'Old' });
     const updated = service.update(todo.id, { title: 'New' });
