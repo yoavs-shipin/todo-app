@@ -31,7 +31,7 @@ backend/src/
     ├── todo.entity.ts           # Todo interface, TodoPriority enum
     ├── todo.controller.ts       # REST endpoints
     ├── todo.service.ts          # Business logic, in-memory store
-    ├── todo.service.spec.ts     # Unit tests (8 cases)
+    ├── todo.service.spec.ts     # Unit tests (16 cases)
     └── dto/
         ├── create-todo.dto.ts   # CreateTodoDto (title required)
         └── update-todo.dto.ts   # UpdateTodoDto (all optional)
@@ -44,8 +44,9 @@ backend/src/
 Query parameters:
 - `completed` (string `"true"` | `"false"`) — filter by completion status
 - `priority` (string `"low"` | `"medium"` | `"high"`) — filter by priority
+- `search` (string) — case-insensitive substring match on `title`
 
-Response: `200 OK` — `Todo[]` sorted by `createdAt` descending.
+All filters are combinable. Response: `200 OK` — `Todo[]` sorted by `createdAt` descending.
 
 #### `GET /todos/:id`
 
@@ -58,7 +59,8 @@ Body:
 {
   "title": "string (required, non-empty)",
   "description": "string (optional)",
-  "priority": "low | medium | high (optional, default: medium)"
+  "priority": "low | medium | high (optional, default: medium)",
+  "dueDate": "ISO date string (optional)"
 }
 ```
 
@@ -74,7 +76,8 @@ Body (all fields optional):
   "title": "string",
   "description": "string",
   "completed": "boolean",
-  "priority": "low | medium | high"
+  "priority": "low | medium | high",
+  "dueDate": "ISO date string | null"
 }
 ```
 
@@ -86,6 +89,14 @@ No body. Flips `completed` boolean.
 
 Response: `200 OK` — updated `Todo`. `404` if not found.
 
+#### `DELETE /todos/completed`
+
+Deletes all todos where `completed === true`.
+
+Response: `200 OK` — `{ "deleted": number }` with the count of removed todos.
+
+**Route ordering:** This route must be declared before `DELETE /todos/:id` so NestJS does not match `"completed"` as an ID.
+
 #### `DELETE /todos/:id`
 
 Response: `204 No Content`. `404` if not found.
@@ -93,7 +104,7 @@ Response: `204 No Content`. `404` if not found.
 ### Validation
 
 - Global `ValidationPipe` with `whitelist: true` (strips unknown properties) and `transform: true`
-- DTOs use `class-validator` decorators: `@IsString`, `@IsNotEmpty`, `@IsOptional`, `@IsBoolean`, `@IsEnum`
+- DTOs use `class-validator` decorators: `@IsString`, `@IsNotEmpty`, `@IsOptional`, `@IsBoolean`, `@IsEnum`, `@IsDateString`
 
 ### Data Model
 
@@ -110,6 +121,7 @@ interface Todo {
   description: string; // defaults to ""
   completed: boolean;  // defaults to false
   priority: TodoPriority; // defaults to MEDIUM
+  dueDate: string | null; // defaults to null
   createdAt: Date;
   updatedAt: Date;
 }
@@ -130,17 +142,19 @@ In-memory `Map<string, Todo>` in `TodoService`. No persistence across restarts. 
 
 ```
 App
-├── AddTodoForm       # Title input, expandable description/priority
-├── FilterBar         # Status tabs (all/active/done) + priority dropdown
-└── TodoItem[]        # Individual todo: checkbox, content, priority badge, actions
+├── AddTodoForm       # Title input, expandable description/priority/due date
+├── SearchBar         # Debounced title search input with clear button
+├── FilterBar         # Status tabs (all/active/done) + priority dropdown + clear completed
+└── TodoItem[]        # Individual todo: checkbox, content, due date, priority badge, actions
 ```
 
 ### State Management
 
 - React `useState` + `useCallback` hooks — no external state library
 - `loading` flag for initial fetch
-- `filter` (status) and `priorityFilter` (priority) drive `api.list()` params
-- After every mutation (add/toggle/delete/update), the full list is re-fetched
+- `filter` (status), `priorityFilter` (priority), and `search`/`debouncedSearch` (title search) drive `api.list()` params
+- Search input debounces 300ms before updating `debouncedSearch` and triggering a reload
+- After every mutation (add/toggle/delete/update/clear completed), the full list is re-fetched
 
 ### API Client (`api.ts`)
 
@@ -178,13 +192,17 @@ Vite dev server on port 5173 with proxy:
 
 ## Testing
 
-- 8 unit tests in `todo.service.spec.ts` covering:
+- 16 unit tests in `todo.service.spec.ts` covering:
   - Create with defaults
+  - Create and update with due date
   - List all todos
   - Filter by completed status
   - Filter by priority
+  - Filter by search (case-insensitive)
+  - Combined search and priority filters
   - Update fields
   - Toggle completion
   - Remove todo
+  - Clear completed todos
   - 404 on missing todo
 - Test runner: Jest with `ts-jest` transform

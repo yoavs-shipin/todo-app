@@ -14,22 +14,23 @@ A full-stack todo list application for personal task management. Users create, o
 
 ### F1 — Create Todo
 
-- User enters a title (required) and optionally a description and priority level
+- User enters a title (required) and optionally a description, priority level, and due date
 - Priority defaults to `medium` if not specified
 - New todos start as incomplete (`completed: false`)
-- The form has an expandable "More options" section for description and priority
+- The form has an expandable "More options" section for description, priority, and due date
 
 ### F2 — View Todos
 
 - All todos display in a single list, sorted newest-first
-- Each item shows: title, description (if set), priority badge, completion checkbox
+- Each item shows: title, description (if set), due date (if set), priority badge, completion checkbox
+- Due dates display as a short date (e.g. "Due: Jul 30"); overdue incomplete todos show the date in red
 - Active task count displayed in the header ("N tasks remaining")
 - Empty state shown when no todos match the current filters
 
 ### F3 — Edit Todo
 
 - Inline editing via double-click on the title or the edit button
-- Editable fields: title, description
+- Editable fields: title, description, due date
 - Save with Enter, cancel with Escape
 - Edit/delete buttons appear on hover
 
@@ -57,15 +58,31 @@ A full-stack todo list application for personal task management. Users create, o
 - Filters are applied server-side via the `priority` query parameter
 - Combinable with status filter
 
+### F8 — Search by Title
+
+- Text input above the filter bar with placeholder "Search todos..."
+- Case-insensitive substring match on title, applied server-side via the `search` query parameter
+- Debounced 300ms before triggering the API call
+- Clear (×) button appears when text is entered; clicking it resets the search
+- Combinable with status and priority filters
+
+### F9 — Clear Completed
+
+- "Clear completed (N)" button in the filter bar when completed todos are visible in the current list
+- Deletes all completed todos in a single action via `DELETE /todos/completed`
+- Button styled as a text link; hidden when no completed todos are in the current view
+- List refreshes after clearing
+
 ## API Surface
 
 | Method | Endpoint | Request Body | Response | Description |
 |--------|----------|-------------|----------|-------------|
-| GET | `/todos` | — | `Todo[]` | List todos; query: `completed` (bool), `priority` (enum) |
+| GET | `/todos` | — | `Todo[]` | List todos; query: `completed` (bool), `priority` (enum), `search` (string) |
 | GET | `/todos/:id` | — | `Todo` | Get single todo |
-| POST | `/todos` | `{ title, description?, priority? }` | `Todo` | Create todo |
-| PUT | `/todos/:id` | `{ title?, description?, completed?, priority? }` | `Todo` | Update todo |
+| POST | `/todos` | `{ title, description?, priority?, dueDate? }` | `Todo` | Create todo |
+| PUT | `/todos/:id` | `{ title?, description?, completed?, priority?, dueDate? }` | `Todo` | Update todo |
 | PATCH | `/todos/:id/toggle` | — | `Todo` | Toggle completed |
+| DELETE | `/todos/completed` | — | `{ deleted: number }` | Delete all completed todos |
 | DELETE | `/todos/:id` | — | 204 | Delete todo |
 
 ## Data Model
@@ -77,6 +94,7 @@ A full-stack todo list application for personal task management. Users create, o
 | `description` | string | no | `""` | Optional details |
 | `completed` | boolean | no | `false` | Completion status |
 | `priority` | enum: `low`, `medium`, `high` | no | `medium` | Priority level |
+| `dueDate` | ISO date string or null | no | `null` | Optional due date |
 | `createdAt` | ISO datetime | auto | now | Creation timestamp |
 | `updatedAt` | ISO datetime | auto | now | Last update timestamp |
 
@@ -85,6 +103,7 @@ A full-stack todo list application for personal task management. Users create, o
 - `title` is required and must be a non-empty string
 - `priority` must be one of: `low`, `medium`, `high`
 - `completed` must be a boolean
+- `dueDate` must be a valid ISO date string when provided
 - Unknown fields are stripped (whitelist validation)
 
 ## UI Design

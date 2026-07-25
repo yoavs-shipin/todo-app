@@ -37,7 +37,8 @@ npm run dev
 │       ├── types.ts             # Shared TypeScript types
 │       └── components/
 │           ├── AddTodoForm.tsx   # Create todo form
-│           ├── FilterBar.tsx    # Status tabs + priority dropdown
+│           ├── SearchBar.tsx    # Debounced title search input
+│           ├── FilterBar.tsx    # Status tabs + priority dropdown + clear completed
 │           └── TodoItem.tsx     # Single todo row with edit/delete
 └── docs/
     ├── PRD.md                   # Product requirements
@@ -60,18 +61,19 @@ npm run dev
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/todos` | List todos (query: `completed`, `priority`) |
+| GET | `/todos` | List todos (query: `completed`, `priority`, `search`) |
 | GET | `/todos/:id` | Get single todo |
-| POST | `/todos` | Create todo (`title` required) |
+| POST | `/todos` | Create todo (`title` required; optional `description`, `priority`, `dueDate`) |
 | PUT | `/todos/:id` | Update todo fields |
 | PATCH | `/todos/:id/toggle` | Toggle completed status |
+| DELETE | `/todos/completed` | Delete all completed todos (`{ deleted: number }`) |
 | DELETE | `/todos/:id` | Delete todo (204) |
 
 ## Tech Stack
 
 - **Backend:** NestJS 11, TypeScript, class-validator, uuid
 - **Frontend:** React 19, Vite 6, TypeScript, CSS Modules
-- **Testing:** Jest + ts-jest (8 unit tests)
+- **Testing:** Jest + ts-jest (16 unit tests)
 - **Storage:** In-memory (no database — resets on restart)
 
 ## Documentation
