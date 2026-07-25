@@ -8,7 +8,11 @@ import { UpdateTodoDto } from './dto/update-todo.dto';
 export class TodoService {
   private todos: Map<string, Todo> = new Map();
 
-  findAll(filter?: { completed?: boolean; priority?: TodoPriority }): Todo[] {
+  findAll(filter?: {
+    completed?: boolean;
+    priority?: TodoPriority;
+    search?: string;
+  }): Todo[] {
     let results = Array.from(this.todos.values());
 
     if (filter?.completed !== undefined) {
@@ -16,6 +20,12 @@ export class TodoService {
     }
     if (filter?.priority) {
       results = results.filter((t) => t.priority === filter.priority);
+    }
+    if (filter?.search) {
+      const searchLower = filter.search.toLowerCase();
+      results = results.filter((t) =>
+        t.title.toLowerCase().includes(searchLower),
+      );
     }
 
     return results.sort(

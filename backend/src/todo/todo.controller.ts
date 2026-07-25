@@ -24,10 +24,16 @@ export class TodoController {
   findAll(
     @Query('completed') completed?: string,
     @Query('priority') priority?: TodoPriority,
+    @Query('search') search?: string,
   ) {
-    const filter: { completed?: boolean; priority?: TodoPriority } = {};
+    const filter: {
+      completed?: boolean;
+      priority?: TodoPriority;
+      search?: string;
+    } = {};
     if (completed !== undefined) filter.completed = completed === 'true';
     if (priority) filter.priority = priority;
+    if (search) filter.search = search;
     return this.todoService.findAll(filter);
   }
 
