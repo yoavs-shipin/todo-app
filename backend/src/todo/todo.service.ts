@@ -8,7 +8,11 @@ import { UpdateTodoDto } from './dto/update-todo.dto';
 export class TodoService {
   private todos: Map<string, Todo> = new Map();
 
-  findAll(filter?: { completed?: boolean; priority?: TodoPriority }): Todo[] {
+  findAll(filter?: {
+    completed?: boolean;
+    priority?: TodoPriority;
+    tagId?: string;
+  }): Todo[] {
     let results = Array.from(this.todos.values());
 
     if (filter?.completed !== undefined) {
@@ -16,6 +20,9 @@ export class TodoService {
     }
     if (filter?.priority) {
       results = results.filter((t) => t.priority === filter.priority);
+    }
+    if (filter?.tagId) {
+      results = results.filter((t) => t.tagIds.includes(filter.tagId!));
     }
 
     return results.sort(
@@ -37,6 +44,7 @@ export class TodoService {
       description: dto.description ?? '',
       completed: false,
       priority: dto.priority ?? TodoPriority.MEDIUM,
+      tagIds: dto.tagIds ?? [],
       createdAt: now,
       updatedAt: now,
     };

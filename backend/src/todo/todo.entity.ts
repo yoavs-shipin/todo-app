@@ -10,6 +10,7 @@ export interface Todo {
   description: string;
   completed: boolean;
   priority: TodoPriority;
+  tagIds: string[];
   createdAt: Date;
   updatedAt: Date;
 }

@@ -61,4 +61,30 @@ describe('TodoService', () => {
   it('throws on missing todo', () => {
     expect(() => service.findOne('nonexistent')).toThrow(NotFoundException);
   });
+
+  it('creates a todo with tagIds', () => {
+    const todo = service.create({ title: 'Tagged', tagIds: ['tag1', 'tag2'] });
+    expect(todo.tagIds).toEqual(['tag1', 'tag2']);
+  });
+
+  it('creates a todo with empty tagIds by default', () => {
+    const todo = service.create({ title: 'No tags' });
+    expect(todo.tagIds).toEqual([]);
+  });
+
+  it('updates tagIds on a todo', () => {
+    const todo = service.create({ title: 'Task', tagIds: ['tag1'] });
+    const updated = service.update(todo.id, { tagIds: ['tag2', 'tag3'] });
+    expect(updated.tagIds).toEqual(['tag2', 'tag3']);
+  });
+
+  it('filters by tagId', () => {
+    service.create({ title: 'A', tagIds: ['tag1', 'tag2'] });
+    service.create({ title: 'B', tagIds: ['tag2'] });
+    service.create({ title: 'C', tagIds: ['tag3'] });
+
+    const filtered = service.findAll({ tagId: 'tag2' });
+    expect(filtered).toHaveLength(2);
+    expect(filtered.map((t) => t.title).sort()).toEqual(['A', 'B']);
+  });
 });

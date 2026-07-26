@@ -1,4 +1,10 @@
-import { IsString, IsNotEmpty, IsOptional, IsEnum } from 'class-validator';
+import {
+  IsString,
+  IsNotEmpty,
+  IsOptional,
+  IsEnum,
+  IsArray,
+} from 'class-validator';
 import { TodoPriority } from '../todo.entity';
 
 export class CreateTodoDto {
@@ -13,4 +19,9 @@ export class CreateTodoDto {
   @IsEnum(TodoPriority)
   @IsOptional()
   priority?: TodoPriority;
+
+  @IsArray()
+  @IsString({ each: true })
+  @IsOptional()
+  tagIds?: string[];
 }

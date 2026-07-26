@@ -1,4 +1,10 @@
-import { IsString, IsOptional, IsBoolean, IsEnum } from 'class-validator';
+import {
+  IsString,
+  IsOptional,
+  IsBoolean,
+  IsEnum,
+  IsArray,
+} from 'class-validator';
 import { TodoPriority } from '../todo.entity';
 
 export class UpdateTodoDto {
@@ -17,4 +23,9 @@ export class UpdateTodoDto {
   @IsEnum(TodoPriority)
   @IsOptional()
   priority?: TodoPriority;
+
+  @IsArray()
+  @IsString({ each: true })
+  @IsOptional()
+  tagIds?: string[];
 }
