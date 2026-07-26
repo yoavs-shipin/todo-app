@@ -1,12 +1,15 @@
 import { useState } from 'react';
-import type { Todo, Priority } from '../types';
+import type { Todo, Priority, Tag } from '../types';
+import { TagChips } from './TagChips';
+import { TagPicker } from './TagPicker';
 import styles from './TodoItem.module.css';
 
 interface Props {
   todo: Todo;
+  tags: Tag[];
   onToggle: (id: string) => void;
   onDelete: (id: string) => void;
-  onUpdate: (id: string, data: Partial<Pick<Todo, 'title' | 'description' | 'priority'>>) => void;
+  onUpdate: (id: string, data: Partial<Pick<Todo, 'title' | 'description' | 'priority'>> & { tagIds?: string[] }) => void;
 }
 
 const PRIORITY_LABELS: Record<Priority, string> = {
@@ -15,16 +18,18 @@ const PRIORITY_LABELS: Record<Priority, string> = {
   low: 'Low',
 };
 
-export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
+export function TodoItem({ todo, tags, onToggle, onDelete, onUpdate }: Props) {
   const [editing, setEditing] = useState(false);
   const [editTitle, setEditTitle] = useState(todo.title);
   const [editDesc, setEditDesc] = useState(todo.description);
+  const [editTagIds, setEditTagIds] = useState<string[]>(todo.tagIds ?? []);
 
   const handleSave = () => {
     if (!editTitle.trim()) return;
     onUpdate(todo.id, {
       title: editTitle.trim(),
       description: editDesc.trim(),
+      tagIds: editTagIds,
     });
     setEditing(false);
   };
@@ -32,6 +37,7 @@ export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
   const handleCancel = () => {
     setEditTitle(todo.title);
     setEditDesc(todo.description);
+    setEditTagIds(todo.tagIds ?? []);
     setEditing(false);
   };
 
@@ -72,6 +78,7 @@ export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
               onChange={(e) => setEditDesc(e.target.value)}
               placeholder="Description"
             />
+            <TagPicker tags={tags} selected={editTagIds} onChange={setEditTagIds} />
             <div className={styles.editActions}>
               <button className={styles.saveBtn} onClick={handleSave}>Save</button>
               <button className={styles.cancelBtn} onClick={handleCancel}>Cancel</button>
@@ -85,6 +92,7 @@ export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
             {todo.description && (
               <span className={styles.description}>{todo.description}</span>
             )}
+            <TagChips tags={tags.filter((t) => (todo.tagIds ?? []).includes(t.id))} />
           </>
         )}
       </div>

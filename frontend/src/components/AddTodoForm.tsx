@@ -1,24 +1,28 @@
 import { useState } from 'react';
-import type { Priority } from '../types';
+import type { Priority, Tag } from '../types';
+import { TagPicker } from './TagPicker';
 import styles from './AddTodoForm.module.css';
 
 interface Props {
-  onAdd: (title: string, description: string, priority: Priority) => void;
+  tags: Tag[];
+  onAdd: (title: string, description: string, priority: Priority, tagIds: string[]) => void;
 }
 
-export function AddTodoForm({ onAdd }: Props) {
+export function AddTodoForm({ tags, onAdd }: Props) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [priority, setPriority] = useState<Priority>('medium');
+  const [selectedTagIds, setSelectedTagIds] = useState<string[]>([]);
   const [expanded, setExpanded] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!title.trim()) return;
-    onAdd(title.trim(), description.trim(), priority);
+    onAdd(title.trim(), description.trim(), priority, selectedTagIds);
     setTitle('');
     setDescription('');
     setPriority('medium');
+    setSelectedTagIds([]);
     setExpanded(false);
   };
 
@@ -64,6 +68,7 @@ export function AddTodoForm({ onAdd }: Props) {
             <option value="medium">Medium priority</option>
             <option value="high">High priority</option>
           </select>
+          <TagPicker tags={tags} selected={selectedTagIds} onChange={setSelectedTagIds} />
         </div>
       )}
     </form>

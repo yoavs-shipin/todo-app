@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api.ts","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/components/addtodoform.tsx","./src/components/filterbar.tsx","./src/components/tagchips.tsx","./src/components/tagpicker.tsx","./src/components/todoitem.tsx"],"version":"5.9.3"}

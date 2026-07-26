@@ -32,3 +32,73 @@
   color: var(--text-muted);
   padding: 48px 0;
 }
+
+.tagManagement {
+  margin-bottom: 16px;
+}
+
+.manageTagsBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  padding: 4px 0;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.manageTagsBtn:hover {
+  color: var(--text);
+}
+
+.tagForm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tagInput {
+  padding: 6px 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 0.8125rem;
+  outline: none;
+}
+
+.tagInput:focus {
+  border-color: var(--accent);
+}
+
+.tagColorInput {
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.tagSubmitBtn {
+  padding: 6px 12px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.tagSubmitBtn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.tagSubmitBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

@@ -1,4 +1,4 @@
-import type { Todo, Priority } from './types';
+import type { Todo, Priority, Tag } from './types';
 
 const BASE = '/todos';
 
@@ -16,19 +16,20 @@ async function request<T>(url: string, init?: RequestInit): Promise<T> {
 }
 
 export const api = {
-  list: (filter?: { completed?: boolean; priority?: Priority }) => {
+  list: (filter?: { completed?: boolean; priority?: Priority; tagId?: string }) => {
     const params = new URLSearchParams();
     if (filter?.completed !== undefined)
       params.set('completed', String(filter.completed));
     if (filter?.priority) params.set('priority', filter.priority);
+    if (filter?.tagId) params.set('tagId', filter.tagId);
     const qs = params.toString();
     return request<Todo[]>(`${BASE}${qs ? `?${qs}` : ''}`);
   },
 
-  create: (data: { title: string; description?: string; priority?: Priority }) =>
+  create: (data: { title: string; description?: string; priority?: Priority; tagIds?: string[] }) =>
     request<Todo>(BASE, { method: 'POST', body: JSON.stringify(data) }),
 
-  update: (id: string, data: Partial<Pick<Todo, 'title' | 'description' | 'completed' | 'priority'>>) =>
+  update: (id: string, data: Partial<Pick<Todo, 'title' | 'description' | 'completed' | 'priority'>> & { tagIds?: string[] }) =>
     request<Todo>(`${BASE}/${id}`, { method: 'PUT', body: JSON.stringify(data) }),
 
   toggle: (id: string) =>
@@ -36,4 +37,11 @@ export const api = {
 
   remove: (id: string) =>
     request<void>(`${BASE}/${id}`, { method: 'DELETE' }),
+
+  tags: {
+    list: () => request<Tag[]>('/tags'),
+    create: (data: { name: string; color: string }) =>
+      request<Tag>('/tags', { method: 'POST', body: JSON.stringify(data) }),
+    remove: (id: string) => request<void>(`/tags/${id}`, { method: 'DELETE' }),
+  },
 };
