@@ -70,14 +70,20 @@ A full-stack todo list application for personal task management. Users create, o
 
 | Method | Endpoint | Request Body | Response | Description |
 |--------|----------|-------------|----------|-------------|
-| GET | `/todos` | — | `Todo[]` | List todos; query: `completed` (bool), `priority` (enum) |
+| GET | `/todos` | — | `Todo[]` | List todos; query: `completed` (bool), `priority` (enum), `tagId` (UUID) |
 | GET | `/todos/:id` | — | `Todo` | Get single todo |
-| POST | `/todos` | `{ title, description?, priority? }` | `Todo` | Create todo |
-| PUT | `/todos/:id` | `{ title?, description?, completed?, priority? }` | `Todo` | Update todo |
+| POST | `/todos` | `{ title, description?, priority?, tagIds? }` | `Todo` | Create todo |
+| PUT | `/todos/:id` | `{ title?, description?, completed?, priority?, tagIds? }` | `Todo` | Update todo |
 | PATCH | `/todos/:id/toggle` | — | `Todo` | Toggle completed |
 | DELETE | `/todos/:id` | — | 204 | Delete todo |
+| GET | `/tags` | — | `Tag[]` | List all tags |
+| POST | `/tags` | `{ name, color }` | `Tag` | Create tag (`color` is `#RRGGBB`) |
+| PUT | `/tags/:id` | `{ name?, color? }` | `Tag` | Update tag |
+| DELETE | `/tags/:id` | — | 204 | Delete tag |
 
 ## Data Model
+
+### Todo
 
 | Field | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
@@ -86,14 +92,26 @@ A full-stack todo list application for personal task management. Users create, o
 | `description` | string | no | `""` | Optional details |
 | `completed` | boolean | no | `false` | Completion status |
 | `priority` | enum: `low`, `medium`, `high` | no | `medium` | Priority level |
+| `tagIds` | string[] | no | `[]` | IDs of assigned tags |
 | `createdAt` | ISO datetime | auto | now | Creation timestamp |
 | `updatedAt` | ISO datetime | auto | now | Last update timestamp |
+
+### Tag
+
+| Field | Type | Required | Default | Description |
+|-------|------|----------|---------|-------------|
+| `id` | UUID string | auto | — | Unique identifier |
+| `name` | string | yes | — | Display name (unique, case-insensitive) |
+| `color` | string | yes | — | Hex color `#RRGGBB` |
 
 ## Validation Rules
 
 - `title` is required and must be a non-empty string
 - `priority` must be one of: `low`, `medium`, `high`
 - `completed` must be a boolean
+- `tagIds` (when present) must be an array of strings
+- Tag `name` is required and non-empty; `color` must match `#RRGGBB`
+- Duplicate tag names return `409 Conflict`
 - Unknown fields are stripped (whitelist validation)
 
 ## UI Design
@@ -108,5 +126,5 @@ A full-stack todo list application for personal task management. Users create, o
 
 - In-memory storage (no database; data resets on server restart)
 - CORS enabled for `http://localhost:5173`
-- Vite dev server proxies `/todos` to the backend
+- Vite dev server proxies `/todos` to the backend (tag API uses the same relative `/tags` paths from the frontend client)
 - Request validation via `class-validator` DTOs

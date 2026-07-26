@@ -24,6 +24,8 @@ Manual/browser-based regression checklist. Run through these before each release
 - [ ] New todo shows priority badge "Med" (default medium priority)
 - [ ] Click "More options" — description textarea and priority dropdown appear
 - [ ] Create a todo with description and "High" priority — both render correctly
+- [ ] With at least one tag created, open "More options" — tag checkboxes appear below priority
+- [ ] Select one or more tags and add a todo — colored tag chips appear on the item
 - [ ] Click "Less options" — extra fields collapse
 - [ ] After adding, the input field clears and extra options collapse
 
@@ -42,6 +44,7 @@ Manual/browser-based regression checklist. Run through these before each release
 - [ ] Press Escape — edit is cancelled, original values restored
 - [ ] Click the pencil (edit) icon — same edit form appears
 - [ ] Edit description field and click "Save" — description updates
+- [ ] In edit mode, change tag selection and save — tag chips update in view mode
 - [ ] Click "Cancel" — changes discarded
 
 ## 5. Delete Todo
@@ -70,6 +73,8 @@ Manual/browser-based regression checklist. Run through these before each release
 - [ ] Set status filter to "Active" and priority to "High" — only active high-priority todos shown
 - [ ] Change status to "All" — all high-priority todos shown (completed and active)
 - [ ] Reset priority to "All priorities" — full list restored
+- [ ] With tags assigned, set tag filter to one tag — only todos with that tag shown
+- [ ] Combine status "Active", priority "High", and a tag filter — intersection of all three applies
 
 ## 9. Priority Badges
 
@@ -84,8 +89,24 @@ Manual/browser-based regression checklist. Run through these before each release
 - [ ] `GET /todos/nonexistent-uuid` returns 404 JSON response
 - [ ] `POST /todos` with empty body returns 400 with validation errors
 - [ ] `POST /todos` with `{"title": "x", "priority": "invalid"}` returns 400
+- [ ] `POST /tags` with duplicate name (different casing) returns 409
+- [ ] `POST /tags` with invalid color (not `#RRGGBB`) returns 400
 
-## 11. Responsive Layout
+## 11. Tags — Create and Display
+
+- [ ] Click "+ New Tag" — inline form appears (name field and color picker)
+- [ ] Create a tag with a name and color — form closes and tag is available in filters and pickers
+- [ ] Cancel tag form — form hides without creating a tag
+- [ ] Assign the tag to a todo — chip shows tag name with chosen background color
+- [ ] Tag filter dropdown lists "All tags" and each created tag by name
+
+## 12. Filter by Tag
+
+- [ ] Create two tags and todos tagged with each (and one with no tags)
+- [ ] Select tag A in the tag dropdown — only todos tagged with A appear
+- [ ] Select "All tags" — full list restored
+
+## 13. Responsive Layout
 
 - [ ] Resize browser to 375px width — layout remains usable
 - [ ] Add form, filter bar, and todo items stack properly on narrow screens

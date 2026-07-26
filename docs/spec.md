@@ -4,10 +4,12 @@
 
 ```mermaid
 graph TD
-    Browser[React SPA<br/>localhost:5173] -->|fetch /todos/*| Vite[Vite Dev Server]
-    Vite -->|proxy| NestJS[NestJS API<br/>localhost:3000]
-    NestJS --> Service[TodoService]
-    Service --> Store[In-Memory Map&lt;string, Todo&gt;]
+    Browser[React SPA<br/>localhost:5173] -->|fetch /todos/*, /tags/*| Vite[Vite Dev Server]
+    Vite -->|proxy /todos| NestJS[NestJS API<br/>localhost:3000]
+    NestJS --> TodoService[TodoService]
+    NestJS --> TagService[TagService]
+    TodoService --> TodoStore[In-Memory Map&lt;string, Todo&gt;]
+    TagService --> TagStore[In-Memory Map&lt;string, Tag&gt;]
 ```
 
 ### Component Overview
@@ -16,7 +18,7 @@ graph TD
 |-------|-----------|----------------|
 | Frontend | React 19, Vite 6, TypeScript 5 | UI rendering, user interaction, API calls |
 | Backend | NestJS 11, TypeScript 5 | REST API, validation, business logic |
-| Storage | In-memory `Map<string, Todo>` | Data persistence (ephemeral, resets on restart) |
+| Storage | In-memory `Map` (todos and tags) | Data persistence (ephemeral, resets on restart) |
 
 ## Backend
 
@@ -25,15 +27,24 @@ graph TD
 ```
 backend/src/
 ├── main.ts                     # Bootstrap, CORS, global validation pipe
-├── app.module.ts               # Root module, imports TodoModule
+├── app.module.ts               # Root module, imports TodoModule + TagModule
+├── tag/
+│   ├── tag.module.ts            # TagModule: controller + service
+│   ├── tag.entity.ts            # Tag interface
+│   ├── tag.controller.ts        # REST endpoints at /tags
+│   ├── tag.service.ts           # In-memory tag store, unique names
+│   ├── tag.service.spec.ts      # Unit tests (5 cases)
+│   └── dto/
+│       ├── create-tag.dto.ts    # CreateTagDto (name, color)
+│       └── update-tag.dto.ts    # UpdateTagDto (optional fields)
 └── todo/
     ├── todo.module.ts           # TodoModule: controller + service
     ├── todo.entity.ts           # Todo interface, TodoPriority enum
     ├── todo.controller.ts       # REST endpoints
     ├── todo.service.ts          # Business logic, in-memory store
-    ├── todo.service.spec.ts     # Unit tests (8 cases)
+    ├── todo.service.spec.ts     # Unit tests (12 cases)
     └── dto/
-        ├── create-todo.dto.ts   # CreateTodoDto (title required)
+        ├── create-todo.dto.ts   # CreateTodoDto (title required, optional tagIds)
         └── update-todo.dto.ts   # UpdateTodoDto (all optional)
 ```
 
@@ -44,6 +55,7 @@ backend/src/
 Query parameters:
 - `completed` (string `"true"` | `"false"`) — filter by completion status
 - `priority` (string `"low"` | `"medium"` | `"high"`) — filter by priority
+- `tagId` (string UUID) — filter todos whose `tagIds` includes this tag
 
 Response: `200 OK` — `Todo[]` sorted by `createdAt` descending.
 
@@ -58,7 +70,8 @@ Body:
 {
   "title": "string (required, non-empty)",
   "description": "string (optional)",
-  "priority": "low | medium | high (optional, default: medium)"
+  "priority": "low | medium | high (optional, default: medium)",
+  "tagIds": "string[] (optional, default: [])"
 }
 ```
 
@@ -74,7 +87,8 @@ Body (all fields optional):
   "title": "string",
   "description": "string",
   "completed": "boolean",
-  "priority": "low | medium | high"
+  "priority": "low | medium | high",
+  "tagIds": "string[]"
 }
 ```
 
@@ -90,10 +104,46 @@ Response: `200 OK` — updated `Todo`. `404` if not found.
 
 Response: `204 No Content`. `404` if not found.
 
+#### Tag endpoints (`/tags`)
+
+#### `GET /tags`
+
+Response: `200 OK` — `Tag[]` (unordered).
+
+#### `POST /tags`
+
+Body:
+```json
+{
+  "name": "string (required, non-empty)",
+  "color": "string (required, #RRGGBB hex)"
+}
+```
+
+Response: `201 Created` — created `Tag` with generated `id`.
+
+Validation: `400` if fields invalid. `409 Conflict` if name duplicates an existing tag (case-insensitive).
+
+#### `PUT /tags/:id`
+
+Body (all fields optional):
+```json
+{
+  "name": "string",
+  "color": "string (#RRGGBB)"
+}
+```
+
+Response: `200 OK` — updated `Tag`. `404` if not found. `409` on duplicate name when renaming.
+
+#### `DELETE /tags/:id`
+
+Response: `204 No Content`. `404` if not found.
+
 ### Validation
 
 - Global `ValidationPipe` with `whitelist: true` (strips unknown properties) and `transform: true`
-- DTOs use `class-validator` decorators: `@IsString`, `@IsNotEmpty`, `@IsOptional`, `@IsBoolean`, `@IsEnum`
+- DTOs use `class-validator` decorators: `@IsString`, `@IsNotEmpty`, `@IsOptional`, `@IsBoolean`, `@IsEnum`, `@IsArray`, `@Matches`
 
 ### Data Model
 
@@ -110,18 +160,26 @@ interface Todo {
   description: string; // defaults to ""
   completed: boolean;  // defaults to false
   priority: TodoPriority; // defaults to MEDIUM
+  tagIds: string[];    // defaults to []
   createdAt: Date;
   updatedAt: Date;
+}
+
+interface Tag {
+  id: string;   // UUID v4
+  name: string;
+  color: string; // #RRGGBB
 }
 ```
 
 ### Storage
 
-In-memory `Map<string, Todo>` in `TodoService`. No persistence across restarts. IDs generated via `uuid` v4.
+In-memory `Map<string, Todo>` in `TodoService` and `Map<string, Tag>` in `TagService`. No persistence across restarts. IDs generated via `uuid` v4.
 
 ### Error Handling
 
 - Missing resources throw `NotFoundException` (NestJS maps to 404)
+- Duplicate tag names throw `ConflictException` (409)
 - Validation failures return 400 with field-level error messages (handled by `ValidationPipe`)
 
 ## Frontend
@@ -130,17 +188,21 @@ In-memory `Map<string, Todo>` in `TodoService`. No persistence across restarts. 
 
 ```
 App
-├── AddTodoForm       # Title input, expandable description/priority
-├── FilterBar         # Status tabs (all/active/done) + priority dropdown
-└── TodoItem[]        # Individual todo: checkbox, content, priority badge, actions
+├── AddTodoForm       # Title input, expandable description/priority/tags
+├── FilterBar         # Status tabs + priority + tag dropdowns
+├── tag management    # "+ New Tag" inline create form
+└── TodoItem[]        # Checkbox, content, tag chips, priority badge, actions
+    ├── TagChips      # Colored tag pills (view mode)
+    └── TagPicker     # Checkbox multi-select (add/edit)
 ```
 
 ### State Management
 
 - React `useState` + `useCallback` hooks — no external state library
 - `loading` flag for initial fetch
-- `filter` (status) and `priorityFilter` (priority) drive `api.list()` params
-- After every mutation (add/toggle/delete/update), the full list is re-fetched
+- `filter` (status), `priorityFilter` (priority), and `tagFilter` (tag) drive `api.list()` params
+- `tags` loaded on mount via `api.tags.list()`; reloaded after creating a tag
+- After every mutation (add/toggle/delete/update), the full todo list is re-fetched
 
 ### API Client (`api.ts`)
 
@@ -148,6 +210,10 @@ Generic `request<T>` wrapper around `fetch`:
 - Sets `Content-Type: application/json` on all requests
 - Throws on non-2xx responses
 - Returns `undefined` for 204 responses
+
+`api.tags`: `list()`, `create({ name, color })`, `remove(id)` — maps to `/tags` endpoints.
+
+Todo helpers accept optional `tagIds` on create/update and optional `tagId` on `list()`.
 
 ### Styling
 
@@ -178,13 +244,13 @@ Vite dev server on port 5173 with proxy:
 
 ## Testing
 
-- 8 unit tests in `todo.service.spec.ts` covering:
-  - Create with defaults
+- 17 unit tests across `todo.service.spec.ts` (12 cases) and `tag.service.spec.ts` (5 cases), covering:
+  - Create with defaults and with `tagIds`
   - List all todos
-  - Filter by completed status
-  - Filter by priority
-  - Update fields
+  - Filter by completed status, priority, and `tagId`
+  - Update fields including `tagIds`
   - Toggle completion
   - Remove todo
   - 404 on missing todo
+  - Tag create, duplicate name rejection, update, delete, findOne 404
 - Test runner: Jest with `ts-jest` transform
