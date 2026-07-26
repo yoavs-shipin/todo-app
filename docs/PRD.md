@@ -2,7 +2,7 @@
 
 ## Overview
 
-A full-stack todo list application for personal task management. Users create, organize, and track tasks with priority levels and completion status through a web UI backed by a REST API.
+A full-stack todo list application for personal task management. Users create, organize, and track tasks with priority levels, colored tags, and completion status through a web UI backed by a REST API.
 
 ## User Personas
 
@@ -14,22 +14,22 @@ A full-stack todo list application for personal task management. Users create, o
 
 ### F1 — Create Todo
 
-- User enters a title (required) and optionally a description and priority level
+- User enters a title (required) and optionally a description, priority level, and tags
 - Priority defaults to `medium` if not specified
 - New todos start as incomplete (`completed: false`)
-- The form has an expandable "More options" section for description and priority
+- The form has an expandable "More options" section for description, priority, and tag selection
 
 ### F2 — View Todos
 
 - All todos display in a single list, sorted newest-first
-- Each item shows: title, description (if set), priority badge, completion checkbox
+- Each item shows: title, description (if set), colored tag chips (if any), priority badge, completion checkbox
 - Active task count displayed in the header ("N tasks remaining")
 - Empty state shown when no todos match the current filters
 
 ### F3 — Edit Todo
 
 - Inline editing via double-click on the title or the edit button
-- Editable fields: title, description
+- Editable fields: title, description, tags
 - Save with Enter, cancel with Escape
 - Edit/delete buttons appear on hover
 
@@ -56,6 +56,15 @@ A full-stack todo list application for personal task management. Users create, o
 - Dropdown selector: All priorities, High, Medium, Low
 - Filters are applied server-side via the `priority` query parameter
 - Combinable with status filter
+
+### F8 — Tags
+
+- User creates tags via "+ New Tag" (name + color picker); default color is `#3b82f6`
+- Tag names must be unique (case-insensitive) on the server
+- Tags display as colored chips on todo items (text color adjusts for contrast)
+- User assigns one or more tags when creating a todo (in "More options") or when editing a todo
+- Tag filter dropdown: "All tags" plus one option per tag; filters server-side via `tagId` query parameter
+- Combinable with status and priority filters
 
 ## API Surface
 
