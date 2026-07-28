@@ -22,7 +22,11 @@ npm run dev
 ├── backend/                     # NestJS REST API
 │   └── src/
 │       ├── main.ts              # Bootstrap, CORS, validation pipe
-│       ├── app.module.ts        # Root module
+│       ├── app.module.ts        # Root module (TodoModule + HealthModule)
+│       ├── health/
+│       │   ├── health.module.ts
+│       │   ├── health.controller.ts  # GET /health
+│       │   └── health.controller.spec.ts
 │       └── todo/
 │           ├── todo.module.ts
 │           ├── todo.entity.ts   # Todo interface + TodoPriority enum
@@ -60,6 +64,7 @@ npm run dev
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
+| GET | `/health` | Health check (`{ "status": "ok" }`) |
 | GET | `/todos` | List todos (query: `completed`, `priority`) |
 | GET | `/todos/:id` | Get single todo |
 | POST | `/todos` | Create todo (`title` required) |
@@ -71,7 +76,7 @@ npm run dev
 
 - **Backend:** NestJS 11, TypeScript, class-validator, uuid
 - **Frontend:** React 19, Vite 6, TypeScript, CSS Modules
-- **Testing:** Jest + ts-jest (8 unit tests)
+- **Testing:** Jest + ts-jest (9 unit tests)
 - **Storage:** In-memory (no database — resets on restart)
 
 ## Documentation

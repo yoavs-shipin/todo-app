@@ -77,7 +77,13 @@ Manual/browser-based regression checklist. Run through these before each release
 - [ ] Medium-priority todo shows amber "Med" badge
 - [ ] Low-priority todo shows green "Low" badge
 
-## 10. API Error Handling
+## 10. Health Check API
+
+- [ ] `GET http://localhost:3000/health` returns HTTP 200
+- [ ] Response body is JSON `{ "status": "ok" }`
+- [ ] Endpoint responds while the backend is running (no auth required)
+
+## 11. API Error Handling
 
 - [ ] Stop the backend, try to add a todo — UI does not crash (check console for error)
 - [ ] Restart the backend — app recovers on next action/filter change
@@ -85,7 +91,7 @@ Manual/browser-based regression checklist. Run through these before each release
 - [ ] `POST /todos` with empty body returns 400 with validation errors
 - [ ] `POST /todos` with `{"title": "x", "priority": "invalid"}` returns 400
 
-## 11. Responsive Layout
+## 12. Responsive Layout
 
 - [ ] Resize browser to 375px width — layout remains usable
 - [ ] Add form, filter bar, and todo items stack properly on narrow screens

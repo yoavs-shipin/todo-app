@@ -7,7 +7,9 @@ graph TD
     Browser[React SPA<br/>localhost:5173] -->|fetch /todos/*| Vite[Vite Dev Server]
     Vite -->|proxy| NestJS[NestJS API<br/>localhost:3000]
     NestJS --> Service[TodoService]
+    NestJS --> Health[HealthController]
     Service --> Store[In-Memory Map&lt;string, Todo&gt;]
+    Health -->|GET /health| Ok["{ status: ok }"]
 ```
 
 ### Component Overview
@@ -25,7 +27,11 @@ graph TD
 ```
 backend/src/
 ├── main.ts                     # Bootstrap, CORS, global validation pipe
-├── app.module.ts               # Root module, imports TodoModule
+├── app.module.ts               # Root module, imports TodoModule + HealthModule
+├── health/
+│   ├── health.module.ts         # HealthModule: controller only
+│   ├── health.controller.ts     # GET /health
+│   └── health.controller.spec.ts # Unit test (1 case)
 └── todo/
     ├── todo.module.ts           # TodoModule: controller + service
     ├── todo.entity.ts           # Todo interface, TodoPriority enum
@@ -38,6 +44,14 @@ backend/src/
 ```
 
 ### API Contracts
+
+#### `GET /health`
+
+No query parameters or body.
+
+Response: `200 OK` — `{ "status": "ok" }`.
+
+Used for smoke and liveness checks. No auth, validation, or storage involved.
 
 #### `GET /todos`
 
@@ -187,4 +201,5 @@ Vite dev server on port 5173 with proxy:
   - Toggle completion
   - Remove todo
   - 404 on missing todo
-- Test runner: Jest with `ts-jest` transform
+- 1 unit test in `health.controller.spec.ts` asserting `check()` returns `{ status: 'ok' }`
+- Test runner: Jest with `ts-jest` transform (9 tests total)

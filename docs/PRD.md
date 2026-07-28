@@ -61,6 +61,7 @@ A full-stack todo list application for personal task management. Users create, o
 
 | Method | Endpoint | Request Body | Response | Description |
 |--------|----------|-------------|----------|-------------|
+| GET | `/health` | — | `{ status: "ok" }` | Health check (smoke / liveness) |
 | GET | `/todos` | — | `Todo[]` | List todos; query: `completed` (bool), `priority` (enum) |
 | GET | `/todos/:id` | — | `Todo` | Get single todo |
 | POST | `/todos` | `{ title, description?, priority? }` | `Todo` | Create todo |
@@ -101,3 +102,4 @@ A full-stack todo list application for personal task management. Users create, o
 - CORS enabled for `http://localhost:5173`
 - Vite dev server proxies `/todos` to the backend
 - Request validation via `class-validator` DTOs
+- `GET /health` returns `{ "status": "ok" }` for smoke and liveness checks
