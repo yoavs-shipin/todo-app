@@ -72,7 +72,7 @@ export default function App() {
         {loading ? (
           <p className={styles.empty}>Loading...</p>
         ) : todos.length === 0 ? (
-          <p className={styles.empty}>No todos yet. Add one above!</p>
+          <p className={styles.empty}>No tasks yet — create your first item.</p>
         ) : (
           todos.map((todo) => (
             <TodoItem
