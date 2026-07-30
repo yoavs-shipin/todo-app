@@ -16,5 +16,11 @@
       "path": "README.md",
       "purpose": "Setup instructions, architecture overview, developer guide"
     }
+  },
+  "environments": {
+    "local": {
+      "description": "Local todo-app stack for review/QA",
+      "deploy_command": "make review-ready-local"
+    }
   }
 }
