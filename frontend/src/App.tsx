@@ -28,8 +28,18 @@ export default function App() {
     load();
   }, [load]);
 
-  const handleAdd = async (title: string, description: string, priority: Priority) => {
-    await api.create({ title, description: description || undefined, priority });
+  const handleAdd = async (
+    title: string,
+    description: string,
+    priority: Priority,
+    dueDate?: string,
+  ) => {
+    await api.create({
+      title,
+      description: description || undefined,
+      priority,
+      dueDate: dueDate || undefined,
+    });
     load();
   };
 
