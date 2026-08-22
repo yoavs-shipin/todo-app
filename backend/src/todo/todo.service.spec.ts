@@ -17,6 +17,16 @@ describe('TodoService', () => {
     expect(todo.description).toBe('');
   });
 
+  it('creates a todo with a due date', () => {
+    const todo = service.create({ title: 'Dated', dueDate: '2026-12-31' });
+    expect(todo.dueDate).toEqual(new Date('2026-12-31'));
+  });
+
+  it('creates a todo without a due date', () => {
+    const todo = service.create({ title: 'Undated' });
+    expect(todo.dueDate).toBeUndefined();
+  });
+
   it('lists all created todos', () => {
     service.create({ title: 'First' });
     service.create({ title: 'Second' });
