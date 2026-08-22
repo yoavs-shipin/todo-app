@@ -65,6 +65,26 @@
   margin-top: 2px;
 }
 
+.dueDate {
+  flex-shrink: 0;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-top: 2px;
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.overdue {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--danger);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .priority {
   flex-shrink: 0;
   font-size: 0.6875rem;
