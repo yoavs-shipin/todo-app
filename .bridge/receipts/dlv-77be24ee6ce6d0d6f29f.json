@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-77be24ee6ce6d0d6f29f -->\ndeliveryId: dlv-77be24ee6ce6d0d6f29f\nprogram: v3-bidirectional-control\nagent: bc-34b3d627-2d2e-5c52-8899-c0b64c4ddb03\nkind: program.decision_requested\nrequestId: dec-6c68afbd-73c5-51a6-a527-b9cfc2a56f5d\ntarget: og-fix_unrouted-program-acceptance:program\ngeneration: program:dec-6c68afbd-73c5-51a6-a527-b9cfc2a56f5d:og-fix_unrouted-program-acceptance:program\ndeadline: 2026-09-11T19:25:24Z (58 min left)\nopen ChatGPT → v3_get_review_packet dec-6c68afbd-73c5-51a6-a527-b9cfc2a56f5d",
+  "deliveryId": "dlv-77be24ee6ce6d0d6f29f",
+  "eventIds": [
+    "8da5b3efb374400db00c15c96766b842"
+  ],
+  "generation": "program:dec-6c68afbd-73c5-51a6-a527-b9cfc2a56f5d:og-fix_unrouted-program-acceptance:program",
+  "kind": "program.decision_requested",
+  "programId": "v3-bidirectional-control",
+  "requestId": "dec-6c68afbd-73c5-51a6-a527-b9cfc2a56f5d",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-28c5120ec201",
+  "summary": "requestId=dec-6c68afbd-73c5-51a6-a527-b9cfc2a56f5d target=og-fix_unrouted-program-acceptance:program deadline=2026-09-11T19:25:24Z generation=program:dec-6c68afbd-73c5-51a6-a527-b9cfc2a56f5d:og-fix_unrouted-program-acceptance:program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
