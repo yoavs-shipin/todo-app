@@ -1,5 +1,7 @@
 # Todo App
 
+<!-- QA marker: Q1-retest-2 fixture (chatgpt-control-reliability / pbl2-fixture-ccr-q1r2) — disposable -->
+
 Full-stack todo list application — **NestJS** backend + **React** frontend.
 
 ## Quick Start
