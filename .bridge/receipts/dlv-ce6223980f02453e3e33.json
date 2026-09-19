@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-ce6223980f02453e3e33 -->\nStudio user + flow AI budgets — program.fallback_used\ndeliveryId: dlv-ce6223980f02453e3e33\nprogram: studio-user-ai-budgets-20260914-r2\nagent: program:studio-user-ai-budgets-20260914-r2\nkind: program.fallback_used",
+  "deliveryId": "dlv-ce6223980f02453e3e33",
+  "eventIds": [
+    "473895d648754cdb9431e692fa8daba2"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "studio-user-ai-budgets-20260914-r2",
+  "requestId": "dec-7e5251f2-64e2-5768-b5a9-adcfd19fc268",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-517a119c0e46",
+  "summary": "Studio user + flow AI budgets — controlled V3 r2 restart — fallback used program.fallback_used plan-review:plan",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

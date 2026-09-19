@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-2371eb8c0025b9ea220c -->\ndeliveryId: dlv-2371eb8c0025b9ea220c\nprogram: conversation-observability-completion-20260913\nagent: bc-5326afc7-fa46-500f-903d-aad544e29962\nkind: program.decision_resolved\nrequestId: dec-ac589d3d-61be-574d-8e07-2d2f321c3918\ntarget: og-budget-program\ngeneration: program:dec-ac589d3d-61be-574d-8e07-2d2f321c3918:og-budget-program\ndeadline: 2026-09-13T13:23:21Z (1 min ago)\nopen ChatGPT → v3_get_review_packet dec-ac589d3d-61be-574d-8e07-2d2f321c3918",
+  "deliveryId": "dlv-2371eb8c0025b9ea220c",
+  "eventIds": [
+    "9b68c795c86d4b3aa132857ad1f2b38e"
+  ],
+  "generation": "program:dec-ac589d3d-61be-574d-8e07-2d2f321c3918:og-budget-program",
+  "kind": "program.decision_resolved",
+  "programId": "conversation-observability-completion-20260913",
+  "requestId": "dec-ac589d3d-61be-574d-8e07-2d2f321c3918",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-419e3bfd1a24",
+  "summary": "requestId=dec-ac589d3d-61be-574d-8e07-2d2f321c3918 target=og-budget-program deadline=2026-09-13T13:23:21Z generation=program:dec-ac589d3d-61be-574d-8e07-2d2f321c3918:og-budget-program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-bf138f486cdf6af00c86 -->\nOwner-approved autonomous Grok-AWS integration through production; preserve the existing $250 program ceiling. — program.decision_resolved\ndeliveryId: dlv-bf138f486cdf6af00c86\nprogram: run-program-grok-aws-broker-integration-20260918\nagent: bc-d5c4be0c-b6bb-51be-a733-f20139c92573\nkind: program.decision_resolved",
+  "deliveryId": "dlv-bf138f486cdf6af00c86",
+  "eventIds": [
+    "2ece72a449a147aeaffa49d3fc5f8dee"
+  ],
+  "generation": "1:2",
+  "kind": "program.decision_resolved",
+  "programId": "run-program-grok-aws-broker-integration-20260918",
+  "requestId": "dec-871c4786-fea3-503e-9730-b8ffc4d2f190",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-e99376900e9a",
+  "summary": "Owner-approved autonomous Grok-AWS integration through production; preserve the existing $250 program ceiling. — decision resolved program.decision_resolved unit-review:B1",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
