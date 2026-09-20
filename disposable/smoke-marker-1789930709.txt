@@ -1,1 +1,0 @@
-Marker for grok-aws smoke test on slot-0 at Sun Sep 20 18:58:29 UTC 2026 UTC - branch smoke-test-grok-aws-1789930707
