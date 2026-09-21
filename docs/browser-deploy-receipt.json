@@ -1,9 +1,0 @@
-{
-  "receipt_type": "browser_regression",
-  "status": "PASSED",
-  "timestamp": "2026-09-21T13:32:00Z",
-  "branch": "acp-sdk-accept-20260921-1328",
-  "commit": "57b8eb85e451bc1073a9c51bf6db992c2b79184c",
-  "marker": "ACP SDK isolated acceptance marker. Safe to close.",
-  "note": "review-ready-local (build + tests) + regression runbook checklist completed. No production deploy per explicit instructions."
-}

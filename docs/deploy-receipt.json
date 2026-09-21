@@ -1,7 +1,0 @@
-{
-  "last_review_ready_local": "PASSED at 2026-09-21T13:31:00Z",
-  "commit": "12e2e21997b17558ab439a9bc5aa91609d8ee204",
-  "branch": "acp-sdk-accept-20260921-1328",
-  "marker_file": "docs/acp-sdk-accept-marker.md",
-  "status": "review-ready-local-complete-no-merge-no-deploy"
-}
