@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "success": true,
+  "status": "ok",
+  "repo": "yoavs-shipin/todo-app",
+  "number": "68",
+  "base": "acp-sdk-mtarget-20260921",
+  "head": "acp-sdk-msrc-r13b-20260921",
+  "headSha": "9570721cec8ef9627cc678d3ee6bf8357fbd9991",
+  "mergeCommitSha": "ed6cd49b2a44bab8d0290182084be037c8f2cc0c",
+  "kind": "pr_merged",
+  "httpStatus": 200,
+  "authoritative": true
+}
