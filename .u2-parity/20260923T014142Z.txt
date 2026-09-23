@@ -1,0 +1,2 @@
+U2 disposable parity receipt 20260923T014142Z
+provider=grok-aws
