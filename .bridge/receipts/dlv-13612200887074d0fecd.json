@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-13612200887074d0fecd -->\nV3 autonomous controller smoke — program.decision_requested\ndeliveryId: dlv-13612200887074d0fecd\nprogram: todo-v3-autonomy-smoke-20260915\nagent: bc-6bfb8a37-7fc3-5b5e-8c08-5d93ba1ae61b\nkind: program.decision_requested",
+  "deliveryId": "dlv-13612200887074d0fecd",
+  "eventIds": [
+    "760d3e2cc1724eb8a029bd323f9cc3f2"
+  ],
+  "generation": "program:dec-b56f3919-49bc-5f79-a4c8-c0af959119c5:13",
+  "kind": "program.decision_requested",
+  "programId": "todo-v3-autonomy-smoke-20260915",
+  "requestId": "dec-b56f3919-49bc-5f79-a4c8-c0af959119c5",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-7a661eaf78e0",
+  "summary": "V3 autonomous controller smoke — ai-integration — decision requested program.decision_requested program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

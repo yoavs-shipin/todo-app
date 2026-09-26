@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-db4ed08e0e205a0c01b1 -->\ndeliveryId: dlv-db4ed08e0e205a0c01b1\nprogram: v3-bidirectional-control\nagent: bc-q1-test\nkind: program.decision_requested\nrequestId: dec-q1-test-003\ntarget: unit-review:Q1-FIXTURE\ndeadline: 2026-09-11T18:00:00Z (172 min left)\nopen ChatGPT → v3_get_review_packet dec-q1-test-003",
+  "deliveryId": "dlv-db4ed08e0e205a0c01b1",
+  "eventIds": [
+    "q1-test-ingest-003"
+  ],
+  "generation": null,
+  "kind": "program.decision_requested",
+  "programId": "v3-bidirectional-control",
+  "requestId": "dec-q1-test-003",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-28c5120ec201",
+  "summary": "requestId=dec-q1-test-003 target=unit-review:Q1-FIXTURE deadline=2026-09-11T18:00:00Z",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

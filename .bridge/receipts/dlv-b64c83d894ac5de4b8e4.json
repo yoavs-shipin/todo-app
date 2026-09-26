@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-b64c83d894ac5de4b8e4 -->\nPlugins — program.fallback_used\ndeliveryId: dlv-b64c83d894ac5de4b8e4\nprogram: validation-mitigations\nagent: bc-35e6961b-941d-53e6-9b1b-05888abe0db9\nkind: program.fallback_used",
+  "deliveryId": "dlv-b64c83d894ac5de4b8e4",
+  "eventIds": [
+    "84f86d03cac14077b2215776591d6901"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "validation-mitigations",
+  "requestId": "dec-2592c93e-2e3c-5d4b-8592-e1b4f2308fd8",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-ace2018e4805",
+  "summary": "Plugins — fallback used program.fallback_used unit-review:DPX",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

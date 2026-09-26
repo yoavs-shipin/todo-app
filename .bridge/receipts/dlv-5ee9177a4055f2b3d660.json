@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-5ee9177a4055f2b3d660 -->\nAgent Operations Console Recovery R2 — program.decision_requested\ndeliveryId: dlv-5ee9177a4055f2b3d660\nprogram: agent-operations-console-recovery-r2-20260921\nagent: bc-4dda3d52-3c8d-531c-a41a-2fae36d4e3f9\nkind: program.decision_requested",
+  "deliveryId": "dlv-5ee9177a4055f2b3d660",
+  "eventIds": [
+    "ec4d2d8d9764471f851d813c0c35dc78"
+  ],
+  "generation": "program:dec-b090c4e4-6e2b-5cbc-ad3d-56876d1ed6ae:3",
+  "kind": "program.decision_requested",
+  "programId": "agent-operations-console-recovery-r2-20260921",
+  "requestId": "dec-b090c4e4-6e2b-5cbc-ad3d-56876d1ed6ae",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-3832b924a12f",
+  "summary": "Agent Operations Console Recovery R2 — decision requested program.decision_requested program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

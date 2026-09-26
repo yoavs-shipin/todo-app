@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-7d0badde8c098ff4fee1 -->\nV3 execution effectiveness and ChatGPT-first control — program.decision_requested\ndeliveryId: dlv-7d0badde8c098ff4fee1\nprogram: v3-execution-effectiveness-20260918\nagent: bc-7dacf574-739d-5bff-91cc-5d47e2bc49ea\nkind: program.decision_requested",
+  "deliveryId": "dlv-7d0badde8c098ff4fee1",
+  "eventIds": [
+    "979abebfa5e14673979cd256d573d155"
+  ],
+  "generation": "1:2",
+  "kind": "program.decision_requested",
+  "programId": "v3-execution-effectiveness-20260918",
+  "requestId": "dec-a00d684c-a1dd-5d47-933d-1a82e8a27eda",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-cfa19519604d",
+  "summary": "V3 execution effectiveness and ChatGPT-first control — decision requested program.decision_requested unit-review:T1",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

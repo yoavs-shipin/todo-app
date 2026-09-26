@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-c5e1ca9707ca080251ad -->\nAOC Live Control R6 — program.decision_requested\ndeliveryId: dlv-c5e1ca9707ca080251ad\nprogram: aoc-live-control-r6-20260925\nagent: bc-fa44848c-ee09-5cdb-b2fb-0c443283c0dd\nkind: program.decision_requested",
+  "deliveryId": "dlv-c5e1ca9707ca080251ad",
+  "eventIds": [
+    "a88e601f029d4f9caefd2f4d2bb1b4d2"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "aoc-live-control-r6-20260925",
+  "requestId": "dec-16bdfedc-901a-5be3-99cc-709e71d00a92",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-98526bce1df7",
+  "summary": "AOC Live Control R6 — decision requested program.decision_requested program-acceptance:program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
