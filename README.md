@@ -1,5 +1,7 @@
 # Todo App
 
+<!-- QA marker: Q1 cd-prod-1b fixture (pbl2-fixture-ccr-q1b) — disposable -->
+
 Full-stack todo list application — **NestJS** backend + **React** frontend.
 
 ## Quick Start
