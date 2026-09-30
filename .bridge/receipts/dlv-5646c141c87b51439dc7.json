@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-5646c141c87b51439dc7 -->\nLocal OpenCode — program.decision_requested\ndeliveryId: dlv-5646c141c87b51439dc7\nprogram: local-opencode-20260930\nagent: ga-d914f33c-c735-5ff2-9492-51ad4170999a\nkind: program.decision_requested",
+  "deliveryId": "dlv-5646c141c87b51439dc7",
+  "eventIds": [
+    "7f0b8845c1844567808389e446e12716"
+  ],
+  "generation": "1:2",
+  "kind": "program.decision_requested",
+  "programId": "local-opencode-20260930",
+  "requestId": "dec-6e681974-efbd-5976-aa3e-edd495922cbb",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-f53947fface5",
+  "summary": "Local OpenCode — decision requested program.decision_requested unit-review:BRIDGE",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
