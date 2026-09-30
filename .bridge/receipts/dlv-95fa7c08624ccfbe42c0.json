@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-95fa7c08624ccfbe42c0 -->\nLocal OpenCode — program.decision_requested\ndeliveryId: dlv-95fa7c08624ccfbe42c0\nprogram: local-opencode-20260930\nagent: bc-157cefea-1fd8-5860-a2f3-efdc02f35384\nkind: program.decision_requested",
+  "deliveryId": "dlv-95fa7c08624ccfbe42c0",
+  "eventIds": [
+    "29da488dad94491fb9973f6a0db338ad"
+  ],
+  "generation": "program:dec-cf0a6e14-d91b-5797-b80f-04d62c503d3b:og-attempts_exhausted-POSTQA#after-auto-3",
+  "kind": "program.decision_requested",
+  "programId": "local-opencode-20260930",
+  "requestId": "dec-cf0a6e14-d91b-5797-b80f-04d62c503d3b",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-f53947fface5",
+  "summary": "Local OpenCode — decision requested program.decision_requested og-attempts_exhausted-POSTQA#after-auto-3",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
