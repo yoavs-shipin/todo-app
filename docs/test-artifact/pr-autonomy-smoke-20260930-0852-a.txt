@@ -1,0 +1,3 @@
+Disposable PR autonomy smoke artifact A.
+stamp=20260930-0852
+branch=cursor/pr-autonomy-smoke-20260930-0852-a
