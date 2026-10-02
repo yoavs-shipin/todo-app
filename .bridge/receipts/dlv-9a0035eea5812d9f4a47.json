@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-9a0035eea5812d9f4a47 -->\nAWS Agent Runtime OpenCode Parity — program.decision_requested\ndeliveryId: dlv-9a0035eea5812d9f4a47\nprogram: aws-agent-runtime-opencode-parity\nagent: bc-a53b0408-a556-5fda-8c61-d21cca2b0f4e\nkind: program.decision_requested",
+  "deliveryId": "dlv-9a0035eea5812d9f4a47",
+  "eventIds": [
+    "7408ee2cfbae4a53a43aaa2a907cf314"
+  ],
+  "generation": "1:2",
+  "kind": "program.decision_requested",
+  "programId": "aws-agent-runtime-opencode-parity",
+  "requestId": "dec-f52be4c6-523f-5240-a143-67794f1778de",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-f1bc3c890a9c",
+  "summary": "AWS Agent Runtime OpenCode Parity — decision requested program.decision_requested unit-review:U1",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

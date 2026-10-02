@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-921b2385300d0bdbe7b9 -->\nPlugins — program.decision_requested\ndeliveryId: dlv-921b2385300d0bdbe7b9\nprogram: plugins-studio-diagnostics-20260928\nagent: ga-eba1afe2-102a-5288-8f67-b54015258260\nkind: program.decision_requested",
+  "deliveryId": "dlv-921b2385300d0bdbe7b9",
+  "eventIds": [
+    "cc5041c690af4add8753729695b8c41a"
+  ],
+  "generation": "program:dec-7828baee-7c60-529f-9f4a-9e569ccf7f8a:og-fix_no_change-unit-review:QA",
+  "kind": "program.decision_requested",
+  "programId": "plugins-studio-diagnostics-20260928",
+  "requestId": "dec-7828baee-7c60-529f-9f4a-9e569ccf7f8a",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-43f45a2809b6",
+  "summary": "Plugins — Studio timing diagnostics — decision requested program.decision_requested og-fix_no_change-unit-review:QA",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

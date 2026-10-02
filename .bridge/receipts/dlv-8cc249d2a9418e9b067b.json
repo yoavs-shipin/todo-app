@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-8cc249d2a9418e9b067b -->\nVessel Automation Fix — program.decision_requested\ndeliveryId: dlv-8cc249d2a9418e9b067b\nprogram: vessel-automation-fix-20261001\nagent: bc-86a82069-c719-51d0-a59f-e4235c58d200\nkind: program.decision_requested",
+  "deliveryId": "dlv-8cc249d2a9418e9b067b",
+  "eventIds": [
+    "1c4f00edc8124907abce4160834e1205"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "vessel-automation-fix-20261001",
+  "requestId": "dec-9c4fd027-3196-550b-865e-490229a6f52a",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-89e22fbf452b",
+  "summary": "Vessel Automation Fix — decision requested program.decision_requested unit-review:DEPLOY-WP",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

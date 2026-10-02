@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-c0d8ed0ee108e3960772 -->\nLLM in the Middle — program.decision_requested\ndeliveryId: dlv-c0d8ed0ee108e3960772\nprogram: llm-in-the-middle-r3\nagent: bc-05110b5f-9d95-5e63-800a-303a67bcae76\nkind: program.decision_requested",
+  "deliveryId": "dlv-c0d8ed0ee108e3960772",
+  "eventIds": [
+    "cbc6bf81d5134b63aeb6d584040ef7de"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "llm-in-the-middle-r3",
+  "requestId": "dec-dfb2f1af-308e-5e34-be92-d567ec5d30b7",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-045fe017e8bf",
+  "summary": "LLM in the Middle — R3 execution — decision requested program.decision_requested unit-review:HYGIENE",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

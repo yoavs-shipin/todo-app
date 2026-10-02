@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-4bb888745883e95d66a0 -->\nPlugins Continuation V3 — program.decision_requested\ndeliveryId: dlv-4bb888745883e95d66a0\nprogram: plugins-continuation-v3-20260926\nagent: ga-52696ebf-27c4-5a6a-9214-77b0a026fa53\nkind: program.decision_requested",
+  "deliveryId": "dlv-4bb888745883e95d66a0",
+  "eventIds": [
+    "23980eb226c9475886f324534f556d4c"
+  ],
+  "generation": "remediation:PXLC:0:93fdab626cd3ad85",
+  "kind": "program.decision_requested",
+  "programId": "plugins-continuation-v3-20260926",
+  "requestId": "dec-eaeea539-7ff6-55f1-bb05-f416f4dabc28",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-2c60ad59af64",
+  "summary": "Plugins Continuation V3 — decision requested program.decision_requested PXLC",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

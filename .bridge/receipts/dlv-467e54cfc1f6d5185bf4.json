@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-467e54cfc1f6d5185bf4 -->\nPlugins — program.decision_requested\ndeliveryId: dlv-467e54cfc1f6d5185bf4\nprogram: validation-mitigations\nagent: bc-35e6961b-941d-53e6-9b1b-05888abe0db9\nkind: program.decision_requested",
+  "deliveryId": "dlv-467e54cfc1f6d5185bf4",
+  "eventIds": [
+    "94378a2f32704778bda65236ce22bcfc"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "validation-mitigations",
+  "requestId": "dec-e8634ea4-a8a8-5306-b7f1-9774aeb6df16",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-ace2018e4805",
+  "summary": "Plugins — decision requested program.decision_requested unit-review:H1-H2",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

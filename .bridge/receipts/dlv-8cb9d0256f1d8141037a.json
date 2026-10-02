@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-8cb9d0256f1d8141037a -->\nFinance Kit UX — program.decision_requested\ndeliveryId: dlv-8cb9d0256f1d8141037a\nprogram: finance-kit-ux-20261001\nagent: ga-fa040182-7e81-56fa-b178-18265f8490fa\nkind: program.decision_requested",
+  "deliveryId": "dlv-8cb9d0256f1d8141037a",
+  "eventIds": [
+    "37cd8e9f5e294ea4b952ea5b07115971"
+  ],
+  "generation": "remediation:PREDEPLOY:0:7f6b4da67e8ba046",
+  "kind": "program.decision_requested",
+  "programId": "finance-kit-ux-20261001",
+  "requestId": "dec-38886097-1fb4-5368-ae0d-95c5c34f1fc1",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-72448a20fbf4",
+  "summary": "Finance Kit UX — decision requested program.decision_requested PREDEPLOY",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

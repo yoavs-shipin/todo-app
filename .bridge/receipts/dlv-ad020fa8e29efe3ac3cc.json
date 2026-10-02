@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-ad020fa8e29efe3ac3cc -->\nFinance Production R2 — program.decision_requested\ndeliveryId: dlv-ad020fa8e29efe3ac3cc\nprogram: finance-production-r2-20260930\nagent: bc-1dd85893-cb05-540b-9b3b-50a7eac1a0d4\nkind: program.decision_requested",
+  "deliveryId": "dlv-ad020fa8e29efe3ac3cc",
+  "eventIds": [
+    "43ca4d85a0d542ab849b76fee24983c6"
+  ],
+  "generation": "remediation:PREDEPLOY:0:4d0da8c50effa1b3",
+  "kind": "program.decision_requested",
+  "programId": "finance-production-r2-20260930",
+  "requestId": "dec-3d4c8c57-22f2-5aa0-9d68-e07b32244b4b",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-cb907d9fc628",
+  "summary": "Finance Production R2 — decision requested program.decision_requested PREDEPLOY",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
