@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-5c8d8fe51c1dc062677d -->\nData Platform — program.decision_requested\ndeliveryId: dlv-5c8d8fe51c1dc062677d\nprogram: data-platform-upstream-repair-20261004-r6\nagent: ga-6238bc14-4516-588b-8a1e-1fa204c591f8\nkind: program.decision_requested",
+  "deliveryId": "dlv-5c8d8fe51c1dc062677d",
+  "eventIds": [
+    "620cf7d9d9134c92a88dc7b5bec0469b"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "data-platform-upstream-repair-20261004-r6",
+  "requestId": "dec-68f2d979-be17-58f3-b0d4-009ff1327e83",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-5652ef5b30e9",
+  "summary": "Data Platform — decision requested program.decision_requested unit-review:POSTQA2: last answer rejected (test_rerun_used: one test re-run per gate cycle is already spent; submit a verdict instead); correct and resubmit before 2026-10-04T22:56:42Z",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
