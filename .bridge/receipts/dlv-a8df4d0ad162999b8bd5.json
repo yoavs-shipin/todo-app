@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-a8df4d0ad162999b8bd5 -->\nData Platform — program.decision_requested\ndeliveryId: dlv-a8df4d0ad162999b8bd5\nprogram: data-platform-upstream-repair-20261004-r4\nagent: ga-605fb4c4-4a4d-506f-951f-6a54da1757be\nkind: program.decision_requested",
+  "deliveryId": "dlv-a8df4d0ad162999b8bd5",
+  "eventIds": [
+    "ad8c0b58de5841709a9cf0dd7779efc1"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "data-platform-upstream-repair-20261004-r4",
+  "requestId": "dec-c4d7c072-d6d1-5205-a8b5-bce0d5a07e73",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-fbd8cf5dae19",
+  "summary": "Data Platform — decision requested program.decision_requested unit-review:POOL-REPIN",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
