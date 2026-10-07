@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-68c51493afaa2a49a981 -->\nAWS Cleanup — program.decision_requested\ndeliveryId: dlv-68c51493afaa2a49a981\nprogram: aws-cleanup-20261007-r2\nagent: ga-75f49c1a-4d6d-5fcc-9f47-c3e092a4a4bd\nkind: program.decision_requested",
+  "deliveryId": "dlv-68c51493afaa2a49a981",
+  "eventIds": [
+    "f9f5e259326a4b45873950392d6e0983"
+  ],
+  "generation": "remediation:DEPLOY:1:12df8cc96733ec68",
+  "kind": "program.decision_requested",
+  "programId": "aws-cleanup-20261007-r2",
+  "requestId": "dec-eb49f0ee-43a6-58a9-9ab4-a5b1aad8e047",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-25d6830e530e",
+  "summary": "AWS Cleanup — decision requested program.decision_requested DEPLOY",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
