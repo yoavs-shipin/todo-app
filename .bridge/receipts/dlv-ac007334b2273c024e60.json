@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-ac007334b2273c024e60 -->\nAOC Live Control R6 — program.fallback_used\ndeliveryId: dlv-ac007334b2273c024e60\nprogram: aoc-live-control-r6-20260925\nagent: bc-fa44848c-ee09-5cdb-b2fb-0c443283c0dd\nkind: program.fallback_used",
+  "deliveryId": "dlv-ac007334b2273c024e60",
+  "eventIds": [
+    "cec68c70601a489db8c8cec51345cb97"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "aoc-live-control-r6-20260925",
+  "requestId": "dec-5136ca7c-56b6-5db9-8f38-3d6c34ca4e07",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-98526bce1df7",
+  "summary": "AOC Live Control R6 — fallback used program.fallback_used post-deploy",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

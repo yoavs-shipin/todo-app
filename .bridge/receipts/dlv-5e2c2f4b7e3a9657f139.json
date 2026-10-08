@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-5e2c2f4b7e3a9657f139 -->\nData Platform — program.fallback_used\ndeliveryId: dlv-5e2c2f4b7e3a9657f139\nprogram: data-platform-upstream-repair-20261004-r6\nagent: ga-6238bc14-4516-588b-8a1e-1fa204c591f8\nkind: program.fallback_used",
+  "deliveryId": "dlv-5e2c2f4b7e3a9657f139",
+  "eventIds": [
+    "db3258d597454c6a81e5af3796caa05f"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "data-platform-upstream-repair-20261004-r6",
+  "requestId": "dec-68f2d979-be17-58f3-b0d4-009ff1327e83",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-5652ef5b30e9",
+  "summary": "Data Platform — fallback used program.fallback_used unit-review:POSTQA2",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

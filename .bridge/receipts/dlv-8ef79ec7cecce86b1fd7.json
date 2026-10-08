@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-8ef79ec7cecce86b1fd7 -->\nControl Plane — program.fallback_used\ndeliveryId: dlv-8ef79ec7cecce86b1fd7\nprogram: control-plane-20261004\nagent: ga-a847843b-9b3d-5c62-aa53-870b4d778da3\nkind: program.fallback_used",
+  "deliveryId": "dlv-8ef79ec7cecce86b1fd7",
+  "eventIds": [
+    "d370e7cbde7849f2a5ec1e0e31b1ca47"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "control-plane-20261004",
+  "requestId": "dec-b971d51d-0e46-5cd1-bd93-7e1554d20db5",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-13553a22ed92",
+  "summary": "Control Plane — fallback used program.fallback_used unit-review:RELQA",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

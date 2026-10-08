@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-f554cfe2c5de3477628f -->\ndeliveryId: dlv-f554cfe2c5de3477628f\nprogram: studio-qna-readiness-v3\nagent: bc-b307edac-83fb-5fa6-b0fd-0adcc9732c03\nkind: program.decision_resolved\nrequestId: dec-6c806e73-00ce-5a50-beaf-3a75225b8311\ntarget: og-fix_exhausted-unit-review:A2-A3\ngeneration: program:dec-6c806e73-00ce-5a50-beaf-3a75225b8311:og-fix_exhausted-unit-review:A2-A3\ndeadline: 2026-09-12T23:29:24Z (1 min ago)\nopen ChatGPT → v3_get_review_packet dec-6c806e73-00ce-5a50-beaf-3a75225b8311",
+  "deliveryId": "dlv-f554cfe2c5de3477628f",
+  "eventIds": [
+    "0733ec5270ca4942936b4d98fb740487"
+  ],
+  "generation": "program:dec-6c806e73-00ce-5a50-beaf-3a75225b8311:og-fix_exhausted-unit-review:A2-A3",
+  "kind": "program.decision_resolved",
+  "programId": "studio-qna-readiness-v3",
+  "requestId": "dec-6c806e73-00ce-5a50-beaf-3a75225b8311",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-a4eb74f448cc",
+  "summary": "requestId=dec-6c806e73-00ce-5a50-beaf-3a75225b8311 target=og-fix_exhausted-unit-review:A2-A3 deadline=2026-09-12T23:29:24Z generation=program:dec-6c806e73-00ce-5a50-beaf-3a75225b8311:og-fix_exhausted-unit-review:A2-A3",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

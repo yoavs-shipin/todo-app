@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-f8e01343a84d3e542574 -->\nQ&A Activities V3 Completion Continuation — program.decision_requested\ndeliveryId: dlv-f8e01343a84d3e542574\nprogram: qna-activities-ssot-expansion-v3-continuation\nagent: bc-0791e79a-7d3f-59cc-8bfa-cadec38b2188\nkind: program.decision_requested",
+  "deliveryId": "dlv-f8e01343a84d3e542574",
+  "eventIds": [
+    "ef7c4f87ffbd4807b0a1fab2e63d1c19"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "qna-activities-ssot-expansion-v3-continuation",
+  "requestId": "dec-0f0cab4d-55bd-592f-a31e-d4a9a59f3443",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-0db6f373dd03",
+  "summary": "Q&A Activities V3 Completion Continuation — decision requested program.decision_requested program-acceptance:program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

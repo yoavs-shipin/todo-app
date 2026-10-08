@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-c988db943618aa537d84 -->\nLLM Middle — program.decision_requested\ndeliveryId: dlv-c988db943618aa537d84\nprogram: llm-middle-production-completion-20261007-final-r2\nagent: bc-ff4b2952-3cbd-5f58-accc-3ffaa2c3b9b9\nkind: program.decision_requested",
+  "deliveryId": "dlv-c988db943618aa537d84",
+  "eventIds": [
+    "57175fa31ea94ec489e6bc716067adfc"
+  ],
+  "generation": "1:2",
+  "kind": "program.decision_requested",
+  "programId": "llm-middle-production-completion-20261007-final-r2",
+  "requestId": "dec-d3667fc1-53c5-5edb-b34b-364aa9058553",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-ab0d9b884b39",
+  "summary": "LLM Middle — decision requested program.decision_requested unit-review:VIZ-PULSE-ASK",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

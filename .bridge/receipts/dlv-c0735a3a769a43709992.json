@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-c0735a3a769a43709992 -->\nAgent Operations Console Recovery R2 — program.fallback_used\ndeliveryId: dlv-c0735a3a769a43709992\nprogram: agent-operations-console-recovery-r2-20260921\nagent: bc-137e746c-c873-5318-ab39-9806fb98341b\nkind: program.fallback_used",
+  "deliveryId": "dlv-c0735a3a769a43709992",
+  "eventIds": [
+    "adb12d43f0994ac1ade368a328c7f6c2"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "agent-operations-console-recovery-r2-20260921",
+  "requestId": "dec-c956f6d5-7863-566a-9a2b-621afcf4b39a",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-3832b924a12f",
+  "summary": "Agent Operations Console Recovery R2 — fallback used program.fallback_used unit-review:E1",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

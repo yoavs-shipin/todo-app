@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-b56b5cbea712db3d391b -->\nControl Plane — program.decision_requested\ndeliveryId: dlv-b56b5cbea712db3d391b\nprogram: control-plane-20261004\nagent: ga-a847843b-9b3d-5c62-aa53-870b4d778da3\nkind: program.decision_requested",
+  "deliveryId": "dlv-b56b5cbea712db3d391b",
+  "eventIds": [
+    "ffef1ea896c540b58c06f556bd9ebb8c"
+  ],
+  "generation": "1:2",
+  "kind": "program.decision_requested",
+  "programId": "control-plane-20261004",
+  "requestId": "dec-ec5d237e-6342-5c5e-8074-648eb2b5b29f",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-13553a22ed92",
+  "summary": "Control Plane — decision requested program.decision_requested unit-review:FINALQA",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-3e7a9c27f0fcfd51fb60 -->\nSTOPPED resume smoke 20260921 — program.decision_requested\ndeliveryId: dlv-3e7a9c27f0fcfd51fb60\nprogram: stopped-resume-smoke-20260921\nagent: program:stopped-resume-smoke-20260921\nkind: program.decision_requested",
+  "deliveryId": "dlv-3e7a9c27f0fcfd51fb60",
+  "eventIds": [
+    "6ddda489c3cc4cdab638f2d75cdf98af"
+  ],
+  "generation": "program:dec-045db16d-f2b0-5869-873e-fae4ca8cd8fa:5",
+  "kind": "program.decision_requested",
+  "programId": "stopped-resume-smoke-20260921",
+  "requestId": "dec-045db16d-f2b0-5869-873e-fae4ca8cd8fa",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-70a6db3a05af",
+  "summary": "STOPPED resume smoke 20260921 — decision requested program.decision_requested program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

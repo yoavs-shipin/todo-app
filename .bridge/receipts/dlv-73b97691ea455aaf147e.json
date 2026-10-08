@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-73b97691ea455aaf147e -->\nGolden Plugin + Studio readiness V3 R2 — program.decision_requested\ndeliveryId: dlv-73b97691ea455aaf147e\nprogram: golden-plugin-studio-readiness-v3-r2\nagent: bc-16a2b884-d4fe-51b5-8132-e4cf7635ba6a\nkind: program.decision_requested",
+  "deliveryId": "dlv-73b97691ea455aaf147e",
+  "eventIds": [
+    "d9c71e85f1d74ea682caa7af7b636907"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "golden-plugin-studio-readiness-v3-r2",
+  "requestId": "dec-13e4833a-6c4f-52de-bde8-2a361779ef3c",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-b67855cabad3",
+  "summary": "Golden Plugin + Studio readiness V3 R2 — decision requested program.decision_requested unit-review:E1",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

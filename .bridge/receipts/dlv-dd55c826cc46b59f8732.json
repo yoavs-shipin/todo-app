@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-dd55c826cc46b59f8732 -->\nHassan CSV ecosystem augmentation — program.fallback_used\ndeliveryId: dlv-dd55c826cc46b59f8732\nprogram: hassan-csv-ecosystem-augmentation\nagent: program:hassan-csv-ecosystem-augmentation\nkind: program.fallback_used",
+  "deliveryId": "dlv-dd55c826cc46b59f8732",
+  "eventIds": [
+    "1fe1d17e4cb8427cbc618d0e68179978"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "hassan-csv-ecosystem-augmentation",
+  "requestId": "dec-1e54bc03-d96b-5634-99b8-0a0b51f75a47",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-708dc9380deb",
+  "summary": "Hassan CSV ecosystem augmentation — fallback used program.fallback_used plan-review:plan",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
