@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-e0fc7a8be20d93458a15 -->\nV4 Orchestration — program.decision_requested\ndeliveryId: dlv-e0fc7a8be20d93458a15\nprogram: v4-orchestration-20261010\nagent: bc-c863c8bb-118b-5e39-91b8-f1e43c7c636d\nkind: program.decision_requested",
+  "deliveryId": "dlv-e0fc7a8be20d93458a15",
+  "eventIds": [
+    "a62142fae1d740b68e0a090f040df452"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "v4-orchestration-20261010",
+  "requestId": "dec-fe3fbd06-dcf5-590c-89de-fa0625f7f062",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-2e24d707040c",
+  "summary": "V4 Orchestration — decision requested program.decision_requested unit-review:C2",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
