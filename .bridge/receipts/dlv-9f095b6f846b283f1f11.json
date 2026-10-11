@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-9f095b6f846b283f1f11 -->\nHassan CSV — program.decision_requested\ndeliveryId: dlv-9f095b6f846b283f1f11\nprogram: hassan-csv-production-20261011\nagent: bc-6819043d-bde5-5f7b-b024-2112e5876b3d\nkind: program.decision_requested",
+  "deliveryId": "dlv-9f095b6f846b283f1f11",
+  "eventIds": [
+    "c22726db80914bf28f868cf3ae4fd129"
+  ],
+  "generation": "program:dec-4239a6e9-dad2-5470-be3c-e4bfbc566e43:og-attempts_exhausted-HUB-QA-r1-r2#after-auto-5",
+  "kind": "program.decision_requested",
+  "programId": "hassan-csv-production-20261011",
+  "requestId": "dec-4239a6e9-dad2-5470-be3c-e4bfbc566e43",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-c3367845f043",
+  "summary": "Hassan CSV — decision requested program.decision_requested og-attempts_exhausted-HUB-QA-r1-r2#after-auto-5",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
