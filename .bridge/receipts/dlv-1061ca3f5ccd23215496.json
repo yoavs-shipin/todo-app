@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-1061ca3f5ccd23215496 -->\nData Platform — program.decision_requested\ndeliveryId: dlv-1061ca3f5ccd23215496\nprogram: data-platform-upstream-repair-20261004-r5\nagent: ga-4eee6a2b-fd00-5ea0-88b8-248bd856d22a\nkind: program.decision_requested",
+  "deliveryId": "dlv-1061ca3f5ccd23215496",
+  "eventIds": [
+    "a5b667c4618f42888ce3598827380c7d"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "data-platform-upstream-repair-20261004-r5",
+  "requestId": "dec-e8cdd749-45d3-5d05-b46f-cbcc230b0bbc",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-ce35d92d7844",
+  "summary": "Data Platform — decision requested program.decision_requested unit-review:POOL-CLOSE",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

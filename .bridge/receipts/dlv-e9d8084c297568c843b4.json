@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-e9d8084c297568c843b4 -->\nv4-e2e-readme-20261012 — program.decision_requested\ndeliveryId: dlv-e9d8084c297568c843b4\nprogram: v4-e2e-readme-20261012\nagent: v4-e2e-readme-20261012\nkind: program.decision_requested",
+  "deliveryId": "dlv-e9d8084c297568c843b4",
+  "eventIds": [
+    "v4dec-review.U1.0ce0ed837516"
+  ],
+  "generation": "1:1:0",
+  "kind": "program.decision_requested",
+  "programId": "v4-e2e-readme-20261012",
+  "requestId": "review.U1.0ce0ed837516",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-fc6ea402b3b0",
+  "summary": "v4-e2e-readme-20261012 — decision.review review.U1.0ce0ed837516",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

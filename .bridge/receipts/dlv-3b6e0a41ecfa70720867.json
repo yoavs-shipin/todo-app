@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-3b6e0a41ecfa70720867 -->\nv4-r3d-multirepo-20261016 — program.decision_requested\ndeliveryId: dlv-3b6e0a41ecfa70720867\nprogram: v4-r3d-multirepo-20261016\nagent: v4-r3d-multirepo-20261016\nkind: program.decision_requested",
+  "deliveryId": "dlv-3b6e0a41ecfa70720867",
+  "eventIds": [
+    "v4dec-flow_gate.effort.3ca3adbb0894"
+  ],
+  "generation": null,
+  "kind": "program.decision_requested",
+  "programId": "v4-r3d-multirepo-20261016",
+  "requestId": null,
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-3e2db616ae26",
+  "summary": "v4-r3d-multirepo-20261016 — decision.flow_gate flow_gate.effort.3ca3adbb0894",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,13 @@
+{
+  "body": "[route probe] 20260911T162958Z — if you are a ChatGPT task run triggered by this commit, reply with 'commit-route-wake OK' and the commit sha.",
+  "deliveryId": "probe-commit-route-20260911T162958Z",
+  "eventIds": [],
+  "generation": null,
+  "kind": "route.probe",
+  "programId": "v3-bidirectional-control",
+  "requestId": null,
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-28c5120ec201",
+  "summary": "Route probe: does an App commit on the control PR head fire the ChatGPT synchronize trigger?",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

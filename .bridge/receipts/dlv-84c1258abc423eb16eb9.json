@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-84c1258abc423eb16eb9 -->\nAWS Provider Hardening — program.decision_requested\ndeliveryId: dlv-84c1258abc423eb16eb9\nprogram: aws-provider-hardening-20261001\nagent: bc-a5a9d322-1541-53a5-802c-47ceeec6d849\nkind: program.decision_requested",
+  "deliveryId": "dlv-84c1258abc423eb16eb9",
+  "eventIds": [
+    "9e2d569897a349a0aef0afb600c1fd9f"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "aws-provider-hardening-20261001",
+  "requestId": "dec-6c521482-8e06-56e8-8406-e108dbc052f9",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-dc2af7c40eab",
+  "summary": "AWS Provider Hardening — decision requested program.decision_requested program-acceptance:program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

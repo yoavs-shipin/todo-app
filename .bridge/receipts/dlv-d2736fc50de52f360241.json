@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-d2736fc50de52f360241 -->\nWake Reliability — program.decision_requested\ndeliveryId: dlv-d2736fc50de52f360241\nprogram: cursor-wake-reliability-20261002\nagent: ga-b26b91f2-9b3a-55b4-a240-ed09b03097b9\nkind: program.decision_requested",
+  "deliveryId": "dlv-d2736fc50de52f360241",
+  "eventIds": [
+    "785c75bdc7cc4f62b3f3305f39eff9be"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "cursor-wake-reliability-20261002",
+  "requestId": "dec-5464498a-d4c9-5d70-bef5-49eaa0791e4e",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-844f3042aa71",
+  "summary": "Wake Reliability — decision requested program.decision_requested unit-review:DEPLOY_BRIDGE",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

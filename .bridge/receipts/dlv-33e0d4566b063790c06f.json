@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-33e0d4566b063790c06f -->\nV3 liveness qa wake 20260918 — program.decision_resolved\ndeliveryId: dlv-33e0d4566b063790c06f\nprogram: v3-liveness-qa-wake-20260918\nagent: bc-fc06d852-8d00-5b7d-ba9d-c0dd6bbdae31\nkind: program.decision_resolved",
+  "deliveryId": "dlv-33e0d4566b063790c06f",
+  "eventIds": [
+    "47895a1fd27940fa97f69e68b2609cd0"
+  ],
+  "generation": "1:2",
+  "kind": "program.decision_resolved",
+  "programId": "v3-liveness-qa-wake-20260918",
+  "requestId": "dec-2c8349b4-1e15-5a20-8bc2-7ad45ea3b6c7",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-b9a92fc6101d",
+  "summary": "V3 liveness qa wake 20260918 — decision resolved program.decision_resolved plan-review:plan",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-7fa12e03197f9fc0323d -->\nKit Fix R3 — program.decision_requested\ndeliveryId: dlv-7fa12e03197f9fc0323d\nprogram: finance-kit-ux-r3-20261001\nagent: ga-6a36a21d-2aac-5034-bbad-8c6e92829675\nkind: program.decision_requested",
+  "deliveryId": "dlv-7fa12e03197f9fc0323d",
+  "eventIds": [
+    "9f8d4e64f23348acb522c4f946925c9f"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "finance-kit-ux-r3-20261001",
+  "requestId": "dec-2cf05f67-f012-5ee2-80f5-bd225716ddaa",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-b61bb5149d0a",
+  "summary": "Kit Fix R3 — decision requested program.decision_requested unit-review:PREDEPLOY",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-6bd4392592f01b16f457 -->\nWake Reliability — program.decision_requested\ndeliveryId: dlv-6bd4392592f01b16f457\nprogram: cursor-wake-reliability-20261002\nagent: ga-b26b91f2-9b3a-55b4-a240-ed09b03097b9\nkind: program.decision_requested",
+  "deliveryId": "dlv-6bd4392592f01b16f457",
+  "eventIds": [
+    "14ab84799662448294ba38464c8dacfd"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "cursor-wake-reliability-20261002",
+  "requestId": "dec-aacc859b-a4aa-5f9f-8680-ac52117754fc",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-844f3042aa71",
+  "summary": "Wake Reliability — decision requested program.decision_requested unit-review:POLL_FAIRNESS",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
