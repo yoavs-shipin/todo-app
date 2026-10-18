@@ -79,3 +79,4 @@ npm run dev
 - **[PRD](docs/PRD.md)** — features, user flows, data model, validation rules
 - **[Technical Spec](docs/spec.md)** — architecture, API contracts, technology decisions
 - **[Regression Runbook](docs/regression-test-runbook.md)** — browser-based test checklist
+- V4 D1/D2 live validation 2026-10-18
