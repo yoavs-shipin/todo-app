@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-8e4be81dad6ca2585fe2 -->\nLLM in the Middle — program.decision_requested\ndeliveryId: dlv-8e4be81dad6ca2585fe2\nprogram: llm-in-the-middle-current-v3-r2\nagent: bc-1f525130-394c-5422-858e-1309b7a722bb\nkind: program.decision_requested",
+  "deliveryId": "dlv-8e4be81dad6ca2585fe2",
+  "eventIds": [
+    "1ca4a2a8275e40ffa25336c65011551b"
+  ],
+  "generation": "2:2",
+  "kind": "program.decision_requested",
+  "programId": "llm-in-the-middle-current-v3-r2",
+  "requestId": "dec-6e469637-086c-5bca-8e35-829b1bbf9c25",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-be5703162dc4",
+  "summary": "LLM in the Middle — Current V3 Completion R2 — decision requested program.decision_requested unit-review:PULSE",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

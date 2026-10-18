@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-f7758199c94fde80d63b -->\nAgent Operations Console Repair Completion R4 — program.fallback_used\ndeliveryId: dlv-f7758199c94fde80d63b\nprogram: agent-operations-console-repair-completion-r4-20260922\nagent: bc-81fb9437-c90d-56b4-86a4-2098bb0b1836\nkind: program.fallback_used",
+  "deliveryId": "dlv-f7758199c94fde80d63b",
+  "eventIds": [
+    "635458279eb2464ebf07f9834f178c34"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "agent-operations-console-repair-completion-r4-20260922",
+  "requestId": "dec-c51aa686-6a05-5a73-97e0-9413c5e1dc94",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-e1aff522c6bc",
+  "summary": "Agent Operations Console Repair Completion R4 — fallback used program.fallback_used unit-review:R2",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

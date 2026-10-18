@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-cc5197ca00ec6a727a7a -->\nV3 liveness race hardening 20260918 — program.decision_requested\ndeliveryId: dlv-cc5197ca00ec6a727a7a\nprogram: v3-liveness-race-hardening-20260918\nagent: bc-1fd434f2-2598-537a-a59f-1555a9805bdb\nkind: program.decision_requested",
+  "deliveryId": "dlv-cc5197ca00ec6a727a7a",
+  "eventIds": [
+    "8239770645844bdd81901b6dbd436552"
+  ],
+  "generation": "1:2",
+  "kind": "program.decision_requested",
+  "programId": "v3-liveness-race-hardening-20260918",
+  "requestId": "dec-47a565c2-93f6-5b36-bfca-d3a68a106330",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-da7ad0baccfa",
+  "summary": "V3 liveness race hardening 20260918 — decision requested program.decision_requested post-deploy",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-7dace469c5c40d2e5f21 -->\nCustomer Response — program.decision_requested\ndeliveryId: dlv-7dace469c5c40d2e5f21\nprogram: customer-response-thanks-20261007\nagent: bc-fdeecb95-1b44-58a5-88f1-5c5578fae268\nkind: program.decision_requested",
+  "deliveryId": "dlv-7dace469c5c40d2e5f21",
+  "eventIds": [
+    "83c7fde905774e2981b0e0969a36fd33"
+  ],
+  "generation": "program:dec-9650a1b2-2f14-5ae2-87a3-1933ebe94824:og-attempts_exhausted-OAUTH-QA#after-auto-5",
+  "kind": "program.decision_requested",
+  "programId": "customer-response-thanks-20261007",
+  "requestId": "dec-9650a1b2-2f14-5ae2-87a3-1933ebe94824",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-111498eb3695",
+  "summary": "Customer Response — decision requested program.decision_requested og-attempts_exhausted-OAUTH-QA#after-auto-5",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

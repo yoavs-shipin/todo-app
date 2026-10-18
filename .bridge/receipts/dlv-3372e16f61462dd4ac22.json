@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-3372e16f61462dd4ac22 -->\nNotify Test Copy — program.fallback_used\ndeliveryId: dlv-3372e16f61462dd4ac22\nprogram: notify-test-copy-20261001\nagent: bc-8196b13f-7ef7-5107-a24f-5492efca5387\nkind: program.fallback_used",
+  "deliveryId": "dlv-3372e16f61462dd4ac22",
+  "eventIds": [
+    "45c1cf9696874a0db2eb848426f6dd1b"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "notify-test-copy-20261001",
+  "requestId": "dec-74cb6b33-defd-5035-b75d-12c486093845",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-cdee9408cbd2",
+  "summary": "Notify Test Copy — fallback used program.fallback_used unit-review:WP",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

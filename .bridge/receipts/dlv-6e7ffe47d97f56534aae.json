@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-6e7ffe47d97f56534aae -->\ndeliveryId: dlv-6e7ffe47d97f56534aae\nprogram: llm-in-the-middle\nagent: bc-5fe63b0d-c98f-5ba8-b502-bc38d8022689\nkind: program.decision_requested\nrequestId: dec-4d4fc761-6571-59b8-acbd-1a55671107ba\ntarget: og-fix_exhausted-unit-review:Q1c-Q2-K2\ngeneration: program:dec-4d4fc761-6571-59b8-acbd-1a55671107ba:og-fix_exhausted-unit-review:Q1c-Q2-K2\ndeadline: 2026-09-11T19:37:24Z (58 min left)\nopen ChatGPT → v3_get_review_packet dec-4d4fc761-6571-59b8-acbd-1a55671107ba",
+  "deliveryId": "dlv-6e7ffe47d97f56534aae",
+  "eventIds": [
+    "b7641d42d17a401cb4fe866afc9262c1"
+  ],
+  "generation": "program:dec-4d4fc761-6571-59b8-acbd-1a55671107ba:og-fix_exhausted-unit-review:Q1c-Q2-K2",
+  "kind": "program.decision_requested",
+  "programId": "llm-in-the-middle",
+  "requestId": "dec-4d4fc761-6571-59b8-acbd-1a55671107ba",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-a43cbcc186b6",
+  "summary": "requestId=dec-4d4fc761-6571-59b8-acbd-1a55671107ba target=og-fix_exhausted-unit-review:Q1c-Q2-K2 deadline=2026-09-11T19:37:24Z generation=program:dec-4d4fc761-6571-59b8-acbd-1a55671107ba:og-fix_exhausted-unit-review:Q1c-Q2-K2",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-2267e8d17a38178e1660 -->\nNotify Test Copy — program.decision_requested\ndeliveryId: dlv-2267e8d17a38178e1660\nprogram: notify-test-copy-20261001\nagent: bc-8196b13f-7ef7-5107-a24f-5492efca5387\nkind: program.decision_requested",
+  "deliveryId": "dlv-2267e8d17a38178e1660",
+  "eventIds": [
+    "9d66a4f153a94d1ab747c54e1b3091fb"
+  ],
+  "generation": "2:2",
+  "kind": "program.decision_requested",
+  "programId": "notify-test-copy-20261001",
+  "requestId": "dec-aa6763ae-65a9-5520-b853-dfb4bb6c9f86",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-817a26400d79",
+  "summary": "Notify Test Copy — decision requested program.decision_requested unit-review:POSTQA",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

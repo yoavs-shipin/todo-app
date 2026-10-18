@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-b12ead979f972c5619c6 -->\nLLM in the Middle Rescue R2 — program.decision_requested\ndeliveryId: dlv-b12ead979f972c5619c6\nprogram: llm-in-the-middle-rescue-20260928-r2\nagent: ga-294de184-7c35-5350-8cd7-aa092dc83ab5\nkind: program.decision_requested",
+  "deliveryId": "dlv-b12ead979f972c5619c6",
+  "eventIds": [
+    "65f327c3b38a43fbae2c0e08f93370bb"
+  ],
+  "generation": "program:dec-bc836e3f-7955-5d6f-a793-49f08457f3d2:og-chatgpt-absent-unit-review:D2",
+  "kind": "program.decision_requested",
+  "programId": "llm-in-the-middle-rescue-20260928-r2",
+  "requestId": "dec-bc836e3f-7955-5d6f-a793-49f08457f3d2",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-bd93f66bb447",
+  "summary": "LLM in the Middle Rescue R2 — decision requested program.decision_requested og-chatgpt-absent-unit-review:D2",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-0869f34dfbd0fd5ae359 -->\nExternal Team EdgeLive / Alexander environment R2 — program.decision_requested\ndeliveryId: dlv-0869f34dfbd0fd5ae359\nprogram: external-team-edgelive-environment-r2\nagent: bc-da619aef-1fe5-54f4-9464-8b23c3c9fb08\nkind: program.decision_requested",
+  "deliveryId": "dlv-0869f34dfbd0fd5ae359",
+  "eventIds": [
+    "b65ecf14632241fea49be0ea63524f7d"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "external-team-edgelive-environment-r2",
+  "requestId": "dec-d60dfb5d-55b2-57e5-90e4-26a39643ee13",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-176f70a9ba26",
+  "summary": "External Team EdgeLive / Alexander environment R2 — decision requested program.decision_requested unit-review:C2",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-853524b46c0c1ce3d635 -->\nLLM Middle — program.fallback_used\ndeliveryId: dlv-853524b46c0c1ce3d635\nprogram: llm-middle-production-completion-20261007-final-r5\nagent: bc-21a986b5-2ad8-5f15-a8f8-8448f7ecb493\nkind: program.fallback_used",
+  "deliveryId": "dlv-853524b46c0c1ce3d635",
+  "eventIds": [
+    "5c0b460d905a404bac4bd5e1ccf1d732"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "llm-middle-production-completion-20261007-final-r5",
+  "requestId": "dec-57fb1125-2fbd-5cd8-8f46-309be42eb659",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-b5c5c64d4363",
+  "summary": "LLM Middle — fallback used program.fallback_used unit-review:VIZ-MIGRATION-REPAIR",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

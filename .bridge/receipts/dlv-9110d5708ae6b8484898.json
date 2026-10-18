@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-9110d5708ae6b8484898 -->\nSupport Bot — program.fallback_used\ndeliveryId: dlv-9110d5708ae6b8484898\nprogram: support-bot-20260926\nagent: bc-34e20b3f-351d-598a-a78d-cfec8bd5716a\nkind: program.fallback_used",
+  "deliveryId": "dlv-9110d5708ae6b8484898",
+  "eventIds": [
+    "b6b9343d15244f55a53b539e74cf68cc"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "support-bot-20260926",
+  "requestId": "dec-170679a1-8d46-533a-b0c3-5602d1414497",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-12a2ba875d12",
+  "summary": "Support Bot — fallback used program.fallback_used unit-review:K1",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

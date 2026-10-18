@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-4a812ba4a60038c1d9fe -->\nAgent Operations Console — program.decision_resolved\ndeliveryId: dlv-4a812ba4a60038c1d9fe\nprogram: agent-operations-console\nagent: bc-8c16e0f5-ba93-5be7-bd42-57434c85bdd1\nkind: program.decision_resolved",
+  "deliveryId": "dlv-4a812ba4a60038c1d9fe",
+  "eventIds": [
+    "6f719f93f8f345319ad720f99a13e630"
+  ],
+  "generation": "remediation:D1:0:ae6240dd9430710a",
+  "kind": "program.decision_resolved",
+  "programId": "agent-operations-console",
+  "requestId": "dec-3fe81f4c-e4b3-5dcc-8b6f-9b12e893aaf9",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-d5f083cbf47a",
+  "summary": "Agent Operations Console — decision resolved program.decision_resolved D1",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

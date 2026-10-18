@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-e9aa50b11ef3969c4f6d -->\nSupport Bot Operator UX — program.decision_requested\ndeliveryId: dlv-e9aa50b11ef3969c4f6d\nprogram: support-bot-operator-ux-20260927\nagent: bc-87ffa02e-049c-591d-976f-a05c3b8a488c\nkind: program.decision_requested",
+  "deliveryId": "dlv-e9aa50b11ef3969c4f6d",
+  "eventIds": [
+    "c2d0ece30fc547bea23fd4aabf8bec94"
+  ],
+  "generation": "1:4",
+  "kind": "program.decision_requested",
+  "programId": "support-bot-operator-ux-20260927",
+  "requestId": "dec-7b448180-4274-5959-af0c-422b75a42156",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-9b0c6269a9e7",
+  "summary": "Support Bot Operator UX — decision requested program.decision_requested program-acceptance:program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

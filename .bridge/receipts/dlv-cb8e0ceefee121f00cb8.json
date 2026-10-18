@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-cb8e0ceefee121f00cb8 -->\nStudio user + flow AI budgets — program.decision_requested\ndeliveryId: dlv-cb8e0ceefee121f00cb8\nprogram: studio-user-ai-budgets-20260915-r4\nagent: bc-cf8cda19-1f9f-5ee1-a47f-ac66d30f021b\nkind: program.decision_requested",
+  "deliveryId": "dlv-cb8e0ceefee121f00cb8",
+  "eventIds": [
+    "eafee85170584bb9a03ba33c7397ca55"
+  ],
+  "generation": "program:dec-3979e3cd-cdeb-5bac-9ac5-e5f5a5406509:og-malformed_verdict-plan-review:plan",
+  "kind": "program.decision_requested",
+  "programId": "studio-user-ai-budgets-20260915-r4",
+  "requestId": "dec-3979e3cd-cdeb-5bac-9ac5-e5f5a5406509",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-a1b4d563f107",
+  "summary": "Studio user + flow AI budgets — V3 continuation r4 — decision requested program.decision_requested og-malformed_verdict-plan-review:plan",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

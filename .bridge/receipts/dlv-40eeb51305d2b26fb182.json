@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-40eeb51305d2b26fb182 -->\nLLM Middle — program.decision_requested\ndeliveryId: dlv-40eeb51305d2b26fb182\nprogram: llm-middle-production-completion-20261007-final-r4\nagent: bc-8a018786-2051-52b7-bf55-2e82dac3fd48\nkind: program.decision_requested",
+  "deliveryId": "dlv-40eeb51305d2b26fb182",
+  "eventIds": [
+    "f0362a05f3464f508030c89c46df7e9c"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "llm-middle-production-completion-20261007-final-r4",
+  "requestId": "dec-e1c57dd9-889c-52fe-b711-eb2a5a9519ef",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-5f40eafcc6a1",
+  "summary": "LLM Middle — decision requested program.decision_requested unit-review:HUB-HARNESS-R3",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

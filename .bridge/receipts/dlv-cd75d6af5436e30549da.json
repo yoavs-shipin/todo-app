@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-cd75d6af5436e30549da -->\nv4-single-repo-default-route-20261016 — program.decision_requested\ndeliveryId: dlv-cd75d6af5436e30549da\nprogram: v4-single-repo-default-route-20261016\nagent: v4-single-repo-default-route-20261016\nkind: program.decision_requested",
+  "deliveryId": "dlv-cd75d6af5436e30549da",
+  "eventIds": [
+    "v4dec-review.U1.75423dd39559"
+  ],
+  "generation": "1:1:0",
+  "kind": "program.decision_requested",
+  "programId": "v4-single-repo-default-route-20261016",
+  "requestId": "review.U1.75423dd39559",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-70a6a5608f59",
+  "summary": "v4-single-repo-default-route-20261016 — decision.review review.U1.75423dd39559",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
