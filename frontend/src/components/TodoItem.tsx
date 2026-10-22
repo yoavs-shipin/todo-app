@@ -15,6 +15,28 @@ const PRIORITY_LABELS: Record<Priority, string> = {
   low: 'Low',
 };
 
+function dateOnly(value: string): string {
+  return value.slice(0, 10);
+}
+
+function localToday(): string {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function isOverdue(todo: Todo): boolean {
+  if (!todo.dueDate || todo.completed) return false;
+  return dateOnly(todo.dueDate) < localToday();
+}
+
+function formatDueDate(value: string): string {
+  const [year, month, day] = dateOnly(value).split('-').map(Number);
+  return new Date(year, month - 1, day).toLocaleDateString();
+}
+
 export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
   const [editing, setEditing] = useState(false);
   const [editTitle, setEditTitle] = useState(todo.title);
@@ -88,6 +110,14 @@ export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
           </>
         )}
       </div>
+
+      {todo.dueDate && (
+        <span
+          className={`${styles.dueDate} ${isOverdue(todo) ? styles.overdue : ''}`}
+        >
+          {isOverdue(todo) ? 'Overdue' : formatDueDate(todo.dueDate)}
+        </span>
+      )}
 
       <span className={`${styles.priority} ${styles[todo.priority]}`}>
         {PRIORITY_LABELS[todo.priority]}

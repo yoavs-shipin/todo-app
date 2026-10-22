@@ -40,19 +40,26 @@ export class TodoService {
       createdAt: now,
       updatedAt: now,
     };
+    if (dto.dueDate !== undefined) {
+      todo.dueDate = new Date(dto.dueDate);
+    }
     this.todos.set(todo.id, todo);
     return todo;
   }
 
   update(id: string, dto: UpdateTodoDto): Todo {
     const todo = this.findOne(id);
+    const { dueDate, ...rest } = dto;
     const updated: Todo = {
       ...todo,
       ...Object.fromEntries(
-        Object.entries(dto).filter(([, v]) => v !== undefined),
+        Object.entries(rest).filter(([, v]) => v !== undefined),
       ),
       updatedAt: new Date(),
     };
+    if (dueDate !== undefined) {
+      updated.dueDate = new Date(dueDate);
+    }
     this.todos.set(id, updated);
     return updated;
   }
