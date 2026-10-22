@@ -1,0 +1,2 @@
+R6 pytest acceptance marker - 2026-09-21
+Proves pytest can run in the isolated ACP SDK branch.
