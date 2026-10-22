@@ -1,0 +1,6 @@
+acceptance-probe: ga-a7fc5a4c-fda2-5300-aa90-93c91817645f
+purpose: harmless disposable fixture for live acceptance after PR700/701
+disposition: DO NOT MERGE
+repo: yoavs-shipin/todo-app
+created_at: 2026-10-22T22:12:07Z
+note: no production change; close this PR after controller inspection
