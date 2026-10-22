@@ -37,6 +37,7 @@ export class TodoService {
       description: dto.description ?? '',
       completed: false,
       priority: dto.priority ?? TodoPriority.MEDIUM,
+      dueDate: dto.dueDate ? new Date(dto.dueDate) : undefined,
       createdAt: now,
       updatedAt: now,
     };
@@ -46,11 +47,13 @@ export class TodoService {
 
   update(id: string, dto: UpdateTodoDto): Todo {
     const todo = this.findOne(id);
+    const { dueDate, ...rest } = dto;
     const updated: Todo = {
       ...todo,
       ...Object.fromEntries(
-        Object.entries(dto).filter(([, v]) => v !== undefined),
+        Object.entries(rest).filter(([, v]) => v !== undefined),
       ),
+      ...(dueDate !== undefined ? { dueDate: new Date(dueDate) } : {}),
       updatedAt: new Date(),
     };
     this.todos.set(id, updated);

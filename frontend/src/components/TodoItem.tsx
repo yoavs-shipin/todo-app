@@ -15,6 +15,22 @@ const PRIORITY_LABELS: Record<Priority, string> = {
   low: 'Low',
 };
 
+function isOverdue(todo: Todo): boolean {
+  if (!todo.dueDate || todo.completed) return false;
+  const due = new Date(todo.dueDate);
+  if (Number.isNaN(due.getTime())) return false;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const dueDay = new Date(due.getFullYear(), due.getMonth(), due.getDate());
+  return dueDay < today;
+}
+
+function formatDueDate(dueDate: string): string {
+  const due = new Date(dueDate);
+  if (Number.isNaN(due.getTime())) return dueDate;
+  return due.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+}
+
 export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
   const [editing, setEditing] = useState(false);
   const [editTitle, setEditTitle] = useState(todo.title);
@@ -88,6 +104,14 @@ export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
           </>
         )}
       </div>
+
+      {todo.dueDate && (
+        <span
+          className={`${styles.dueDate} ${isOverdue(todo) ? styles.overdue : ''}`}
+        >
+          {isOverdue(todo) ? 'Overdue' : formatDueDate(todo.dueDate)}
+        </span>
+      )}
 
       <span className={`${styles.priority} ${styles[todo.priority]}`}>
         {PRIORITY_LABELS[todo.priority]}
