@@ -1,0 +1,2 @@
+Agent Environment live acceptance probe (bc-3679a7dd / branch cursor/agent-environment-cursor-acceptance-8994).
+DISPOSABLE — do not merge. Safe to delete after controller inspection.
