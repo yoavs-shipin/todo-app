@@ -61,4 +61,15 @@ describe('TodoService', () => {
   it('throws on missing todo', () => {
     expect(() => service.findOne('nonexistent')).toThrow(NotFoundException);
   });
+
+  it('creates a todo with a due date', () => {
+    const dueDate = '2026-12-31';
+    const todo = service.create({ title: 'Dated', dueDate });
+    expect(todo.dueDate).toEqual(new Date(dueDate));
+  });
+
+  it('creates a todo without a due date', () => {
+    const todo = service.create({ title: 'No date' });
+    expect(todo.dueDate).toBeUndefined();
+  });
 });

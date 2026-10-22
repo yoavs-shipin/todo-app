@@ -15,6 +15,25 @@ const PRIORITY_LABELS: Record<Priority, string> = {
   low: 'Low',
 };
 
+function parseLocalDate(value: string): Date {
+  const [year, month, day] = value.slice(0, 10).split('-').map(Number);
+  return new Date(year, month - 1, day);
+}
+
+function isPastDate(value: string): boolean {
+  const due = parseLocalDate(value);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return due < today;
+}
+
+function formatDueDate(value: string): string {
+  return parseLocalDate(value).toLocaleDateString(undefined, {
+    month: 'short',
+    day: 'numeric',
+  });
+}
+
 export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
   const [editing, setEditing] = useState(false);
   const [editTitle, setEditTitle] = useState(todo.title);
@@ -34,6 +53,8 @@ export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
     setEditDesc(todo.description);
     setEditing(false);
   };
+
+  const overdue = Boolean(todo.dueDate && !todo.completed && isPastDate(todo.dueDate));
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
@@ -88,6 +109,12 @@ export function TodoItem({ todo, onToggle, onDelete, onUpdate }: Props) {
           </>
         )}
       </div>
+
+      {todo.dueDate && (
+        <span className={`${styles.dueDate} ${overdue ? styles.overdue : ''}`}>
+          {overdue ? 'Overdue' : formatDueDate(todo.dueDate)}
+        </span>
+      )}
 
       <span className={`${styles.priority} ${styles[todo.priority]}`}>
         {PRIORITY_LABELS[todo.priority]}

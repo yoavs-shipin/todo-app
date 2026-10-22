@@ -25,10 +25,10 @@ export const api = {
     return request<Todo[]>(`${BASE}${qs ? `?${qs}` : ''}`);
   },
 
-  create: (data: { title: string; description?: string; priority?: Priority }) =>
+  create: (data: { title: string; description?: string; priority?: Priority; dueDate?: string }) =>
     request<Todo>(BASE, { method: 'POST', body: JSON.stringify(data) }),
 
-  update: (id: string, data: Partial<Pick<Todo, 'title' | 'description' | 'completed' | 'priority'>>) =>
+  update: (id: string, data: Partial<Pick<Todo, 'title' | 'description' | 'completed' | 'priority' | 'dueDate'>>) =>
     request<Todo>(`${BASE}/${id}`, { method: 'PUT', body: JSON.stringify(data) }),
 
   toggle: (id: string) =>
