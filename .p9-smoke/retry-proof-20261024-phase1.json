@@ -1,0 +1,7 @@
+{
+  "stage": 1,
+  "priorPhase2Sha": "10816f731e53148d3822efb02356e5b5a812bf4e",
+  "purpose": "stable-successor-retry-regression",
+  "topicKey": "v4-p9-agent-handoff-20261022",
+  "nextAction": "Successor creates .p9-smoke/retry-proof-20261024-phase2.json on branch p9/auto-proof-20261024-v1 with retryProofPhase1Sha set to the exact 40-hex commit that added retry-proof-20261024-phase1.json, commits and pushes, then emits p9-continued. Do not alter auto-proof phase1/phase2 or this phase1 file."
+}
