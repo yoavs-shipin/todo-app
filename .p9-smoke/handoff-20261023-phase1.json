@@ -1,0 +1,6 @@
+{
+  "phase": 1,
+  "topicKey": "v4-p9-agent-handoff-20261022",
+  "conversationRef": "cv-7ca6448aa3e6",
+  "remainingAction": "phase2 must add '.p9-smoke/handoff-20261023-phase2.json' referring to phase1 commit SHA and one sentence of useful continuation proof."
+}
