@@ -1,0 +1,53 @@
+{
+  "schema": "p9-retry-proof-validation/1",
+  "validatedAt": "2026-10-24T16:34:00Z",
+  "proofRun": {
+    "conversationRef": "https://cursor.com/agents/bc-8ee7b57e-5150-5c40-b37b-c47a600c3402",
+    "controllerId": "cv-3bc5edd4842b",
+    "topicKey": "v4-p9-agent-handoff-20261022",
+    "topicName": "P9 Auto Handoff",
+    "regressionRef": "PR797 merged successor retry fix"
+  },
+  "repo": {
+    "canonical": "yoavs-shipin/todo-app",
+    "remoteUrl": "https://github.com/yoavs-shipin/todo-app.git",
+    "branch": "p9/auto-proof-20261024-v1",
+    "headSha": "c9c0934f8b8d69ae74c5a2749b5745d9c98640eb",
+    "pushed": true
+  },
+  "priorAutoProof": {
+    "phase2Sha": "10816f731e53148d3822efb02356e5b5a812bf4e",
+    "pathsPreserved": [
+      ".p9-smoke/auto-proof-20261024-phase1.json",
+      ".p9-smoke/auto-proof-20261024-phase2.json",
+      ".p9-smoke/auto-proof-20261024-validation.json"
+    ]
+  },
+  "retryProofPhase1": {
+    "path": ".p9-smoke/retry-proof-20261024-phase1.json",
+    "commit": "c9c0934f8b8d69ae74c5a2749b5745d9c98640eb",
+    "contentSha256": "b105a22679ca03a60e37cabc47cd1945cb926e014d3df8c82558f2864d347dd3",
+    "fields": {
+      "stage": 1,
+      "priorPhase2Sha": "10816f731e53148d3822efb02356e5b5a812bf4e",
+      "purpose": "stable-successor-retry-regression",
+      "topicKey": "v4-p9-agent-handoff-20261022"
+    }
+  },
+  "retryProofPhase2": {
+    "expectedPath": ".p9-smoke/retry-proof-20261024-phase2.json",
+    "presentOnRemote": false,
+    "status": "pending_automatic_successor"
+  },
+  "checks": [
+    {
+      "name": "gh contents retry phase2",
+      "result": "404_not_found"
+    },
+    {
+      "name": "auto-proof artifacts unchanged at prior shas",
+      "result": "ok"
+    }
+  ],
+  "successorNextAction": "Create .p9-smoke/retry-proof-20261024-phase2.json with retryProofPhase1Sha=c9c0934f8b8d69ae74c5a2749b5745d9c98640eb, commit and push on p9/auto-proof-20261024-v1, emit p9-continued. Do not alter auto-proof or retry phase1 files."
+}
