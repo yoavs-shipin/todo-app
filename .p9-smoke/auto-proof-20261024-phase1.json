@@ -1,0 +1,6 @@
+{
+  "phase": 1,
+  "topicKey": "v4-p9-agent-handoff-20261022",
+  "conversationRef": "https://cursor.com/agents/bc-26330c57-441c-57aa-851e-d68a73a5a84c",
+  "remainingAction": "phase2 must write .p9-smoke/auto-proof-20261024-phase2.json referencing exact pushed phase1 commit SHA"
+}
