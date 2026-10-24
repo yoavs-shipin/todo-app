@@ -1,0 +1,61 @@
+{
+  "schema": "p9-auto-proof-validation/1",
+  "validatedAt": "2026-10-24T12:18:00Z",
+  "proofRun": {
+    "conversationRef": "https://cursor.com/agents/bc-26330c57-441c-57aa-851e-d68a73a5a84c",
+    "controllerId": "cv-3bc5edd4842b",
+    "topicKey": "v4-p9-agent-handoff-20261022",
+    "topicName": "P9 Auto Handoff"
+  },
+  "repo": {
+    "canonical": "yoavs-shipin/todo-app",
+    "remoteUrl": "https://github.com/yoavs-shipin/todo-app.git",
+    "branch": "p9/auto-proof-20261024-v1",
+    "headSha": "cc6e3a9b3a39e3b1b4e75e9df892a22b4a10f3a7",
+    "pushed": true
+  },
+  "phase1": {
+    "path": ".p9-smoke/auto-proof-20261024-phase1.json",
+    "commit": "cc6e3a9b3a39e3b1b4e75e9df892a22b4a10f3a7",
+    "contentSha256": "09b9261647f72cf4bfa517f20d9cdecd2f1ed299adb2992a5819f4eb50c24a88",
+    "fields": {
+      "phase": 1,
+      "topicKey": "v4-p9-agent-handoff-20261022",
+      "conversationRef": "https://cursor.com/agents/bc-26330c57-441c-57aa-851e-d68a73a5a84c",
+      "remainingAction": "phase2 must write .p9-smoke/auto-proof-20261024-phase2.json referencing exact pushed phase1 commit SHA"
+    },
+    "remoteBlobUrl": "https://github.com/yoavs-shipin/todo-app/blob/cc6e3a9b3a39e3b1b4e75e9df892a22b4a10f3a7/.p9-smoke/auto-proof-20261024-phase1.json"
+  },
+  "phase2": {
+    "expectedPath": ".p9-smoke/auto-proof-20261024-phase2.json",
+    "presentOnRemote": false,
+    "status": "pending_automatic_successor"
+  },
+  "gitRefs": {
+    "lsRemoteBranchTip": "cc6e3a9b3a39e3b1b4e75e9df892a22b4a10f3a7",
+    "p9SmokePathsOnRemote": [".p9-smoke/auto-proof-20261024-phase1.json"]
+  },
+  "checks": [
+    {
+      "name": "npm test (backend)",
+      "command": "npm test",
+      "result": "skipped_deps",
+      "detail": "jest not found; node_modules not installed in this VM snapshot"
+    },
+    {
+      "name": "npm run build",
+      "command": "npm run build",
+      "result": "skipped_deps",
+      "detail": "nest CLI not found; dependencies not installed"
+    },
+    {
+      "name": "gh contents phase1",
+      "result": "ok"
+    },
+    {
+      "name": "gh contents phase2",
+      "result": "404_not_found"
+    }
+  ],
+  "successorNextAction": "On branch p9/auto-proof-20261024-v1, write .p9-smoke/auto-proof-20261024-phase2.json with phase=2, phase1Sha=cc6e3a9b3a39e3b1b4e75e9df892a22b4a10f3a7, topicKey, conversationRef; commit, push; emit p9-continued marker per schema."
+}
