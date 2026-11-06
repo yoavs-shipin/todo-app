@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-fc22aa70e81bcb612014 -->\nFinance Implementation — program.decision_requested\ndeliveryId: dlv-fc22aa70e81bcb612014\nprogram: finance-implementation-20260930\nagent: ga-39595f39-e92a-5277-9a20-52c15fab5dc4\nkind: program.decision_requested",
+  "deliveryId": "dlv-fc22aa70e81bcb612014",
+  "eventIds": [
+    "e6b8cd53b4714b2286268b28a64ec0ba"
+  ],
+  "generation": "1:3",
+  "kind": "program.decision_requested",
+  "programId": "finance-implementation-20260930",
+  "requestId": "dec-a02b67aa-d10f-5130-ab05-5977cc424b01",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-44c3b9ef50c8",
+  "summary": "Finance Implementation — decision requested program.decision_requested unit-review:PDF-POLICY",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

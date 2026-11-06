@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-1e07b65e13262f28311b -->\nNotify Test Copy — program.decision_requested\ndeliveryId: dlv-1e07b65e13262f28311b\nprogram: notify-test-copy-20261001\nagent: bc-f62ea4b7-e7cb-543b-b6a9-1d08d0af0201\nkind: program.decision_requested",
+  "deliveryId": "dlv-1e07b65e13262f28311b",
+  "eventIds": [
+    "f5245f0d6fc640c98e08658d21300747"
+  ],
+  "generation": "program:dec-cd4a10eb-2fe9-51f0-a03d-6178cadca9ca:15",
+  "kind": "program.decision_requested",
+  "programId": "notify-test-copy-20261001",
+  "requestId": "dec-cd4a10eb-2fe9-51f0-a03d-6178cadca9ca",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-817a26400d79",
+  "summary": "Notify Test Copy — decision requested program.decision_requested program: last answer rejected (no_stall_target: spawn_rescue_unit needs a unit and no non-terminal unit exists); correct and resubmit before 2026-10-02T21:54:59Z",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

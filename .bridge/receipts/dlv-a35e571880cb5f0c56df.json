@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-a35e571880cb5f0c56df -->\nInbox Dashboard Phase 1 Repair — program.decision_requested\ndeliveryId: dlv-a35e571880cb5f0c56df\nprogram: inbox-dashboard-phase1-r2-20261002\nagent: bc-c25f3e1c-7b61-5881-806d-d102ad64e78f\nkind: program.decision_requested",
+  "deliveryId": "dlv-a35e571880cb5f0c56df",
+  "eventIds": [
+    "18c09d968a6541fda9c02c6df89c6a9a"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "inbox-dashboard-phase1-r2-20261002",
+  "requestId": "dec-63362c2e-4552-54f0-a2ac-e8d0f6f6cbf7",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-95d051d97ce6",
+  "summary": "Inbox Dashboard Phase 1 Repair — decision requested program.decision_requested unit-review:PREDEPLOY",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

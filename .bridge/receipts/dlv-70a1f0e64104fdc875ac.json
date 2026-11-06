@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-70a1f0e64104fdc875ac -->\nGolden plugin studio readiness v3 r3 — program.fallback_used\ndeliveryId: dlv-70a1f0e64104fdc875ac\nprogram: golden-plugin-studio-readiness-v3-r3\nagent: bc-66d3f815-9788-56dc-a3d3-7a404ab14cd4\nkind: program.fallback_used",
+  "deliveryId": "dlv-70a1f0e64104fdc875ac",
+  "eventIds": [
+    "a6cc7d916c54419fbc0ec61b7ca48051"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "golden-plugin-studio-readiness-v3-r3",
+  "requestId": "dec-29429920-3569-5f82-9a29-2c7dee95edcb",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-d15c72f6a358",
+  "summary": "Golden plugin studio readiness v3 r3 — fallback used program.fallback_used unit-review:PX",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

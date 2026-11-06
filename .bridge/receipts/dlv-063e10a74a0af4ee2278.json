@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-063e10a74a0af4ee2278 -->\nKernel Fastpath — program.decision_requested\ndeliveryId: dlv-063e10a74a0af4ee2278\nprogram: kernel-fastpath-20261001\nagent: bc-856e332e-021d-5c87-bd59-31b4da14e25a\nkind: program.decision_requested",
+  "deliveryId": "dlv-063e10a74a0af4ee2278",
+  "eventIds": [
+    "266f7a3f702545aab03b44c6807e6bc9"
+  ],
+  "generation": "program:dec-4c7f11c6-85bc-50e1-b753-f954f3f7ac87:og-attempts_exhausted-POSTDEPLOY#after-auto",
+  "kind": "program.decision_requested",
+  "programId": "kernel-fastpath-20261001",
+  "requestId": "dec-4c7f11c6-85bc-50e1-b753-f954f3f7ac87",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-eb87316b1942",
+  "summary": "Kernel Fastpath — decision requested program.decision_requested og-attempts_exhausted-POSTDEPLOY#after-auto",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

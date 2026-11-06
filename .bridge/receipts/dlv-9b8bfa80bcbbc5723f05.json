@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-9b8bfa80bcbbc5723f05 -->\nLLM in the Middle — program.fallback_used\ndeliveryId: dlv-9b8bfa80bcbbc5723f05\nprogram: llm-in-the-middle-r3\nagent: bc-05110b5f-9d95-5e63-800a-303a67bcae76\nkind: program.fallback_used",
+  "deliveryId": "dlv-9b8bfa80bcbbc5723f05",
+  "eventIds": [
+    "44226c45072349029ca3b3cf22d83253"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "llm-in-the-middle-r3",
+  "requestId": "dec-4d9453e2-a7b4-5fdd-9590-87e8fe1ccfcc",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-045fe017e8bf",
+  "summary": "LLM in the Middle — R3 execution — fallback used program.fallback_used unit-review:VIZ_FINDINGS-VIZ_ASK_HARDEN-VIZ_LIFECYCLE",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-f09ca27c977f5b72bb17 -->\nStudio + Q&A final readiness R2 — program.decision_requested\ndeliveryId: dlv-f09ca27c977f5b72bb17\nprogram: studio-qna-final-readiness-r2-20260913\nagent: bc-12327500-12f6-5fc9-94a0-f6549103c154\nkind: program.decision_requested",
+  "deliveryId": "dlv-f09ca27c977f5b72bb17",
+  "eventIds": [
+    "46467c3b268240d18cca2f2bd766b19d"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "studio-qna-final-readiness-r2-20260913",
+  "requestId": "dec-01f6cf57-ab8a-5f3e-bffd-94935dded486",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-f97ed9269c0b",
+  "summary": "Studio + Q&A final readiness R2 — decision requested program.decision_requested unit-review:A1",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

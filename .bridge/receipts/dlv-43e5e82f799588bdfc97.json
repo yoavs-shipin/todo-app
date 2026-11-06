@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-43e5e82f799588bdfc97 -->\nHassan CSV — program.fallback_used\ndeliveryId: dlv-43e5e82f799588bdfc97\nprogram: hassan-csv-production-20261011\nagent: bc-6819043d-bde5-5f7b-b024-2112e5876b3d\nkind: program.fallback_used",
+  "deliveryId": "dlv-43e5e82f799588bdfc97",
+  "eventIds": [
+    "d7c6425c7db4402e93e6b79f1904ac2f"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "hassan-csv-production-20261011",
+  "requestId": "dec-53b6726a-642b-5973-bbb1-9c8dc6b10bcf",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-c3367845f043",
+  "summary": "Hassan CSV — fallback used program.fallback_used unit-review:HUB-QA",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

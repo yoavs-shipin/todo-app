@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-8c8d40960b08354a0b48 -->\nControl Plane — program.decision_requested\ndeliveryId: dlv-8c8d40960b08354a0b48\nprogram: control-plane-20261004\nagent: ga-a847843b-9b3d-5c62-aa53-870b4d778da3\nkind: program.decision_requested",
+  "deliveryId": "dlv-8c8d40960b08354a0b48",
+  "eventIds": [
+    "11e004400311416b862e4981936d8c37"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "control-plane-20261004",
+  "requestId": "dec-e260aea1-e845-5a85-b6e6-f7b992cced3e",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-13553a22ed92",
+  "summary": "Control Plane — decision requested program.decision_requested unit-review:STATEDEPLOY: last answer rejected (malformed_verdict: malformed_verdict); correct and resubmit before 2026-10-05T10:42:25Z",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-a0c026a11f0ab612ed51 -->\nAlert Ingest — program.fallback_used\ndeliveryId: dlv-a0c026a11f0ab612ed51\nprogram: alert-ingest-20261003\nagent: bc-1e8775b6-4754-5424-a34c-362a01ead3c2\nkind: program.fallback_used",
+  "deliveryId": "dlv-a0c026a11f0ab612ed51",
+  "eventIds": [
+    "3221ccffe1a84013b0b85882b4f234d0"
+  ],
+  "generation": "1:2",
+  "kind": "program.fallback_used",
+  "programId": "alert-ingest-20261003",
+  "requestId": "dec-c3fdfc04-eeda-5f47-ab5c-85ccf5d538a9",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-e90567276742",
+  "summary": "Alert Ingest — fallback used program.fallback_used unit-review:DOC1",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

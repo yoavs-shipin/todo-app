@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-8b6fe935657dda67d85f -->\nFullStory final cutover successor — program.decision_resolved\ndeliveryId: dlv-8b6fe935657dda67d85f\nprogram: fullstory-final-cutover-successor-20260914\nagent: program:fullstory-final-cutover-successor-20260914\nkind: program.decision_resolved",
+  "deliveryId": "dlv-8b6fe935657dda67d85f",
+  "eventIds": [
+    "669633681da54c318d887ba907b6aacb"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_resolved",
+  "programId": "fullstory-final-cutover-successor-20260914",
+  "requestId": "dec-d4780279-34cb-563a-86a5-8ce65300ac0a",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-aee59c521ad1",
+  "summary": "FullStory final cutover successor — decision resolved program.decision_resolved plan-review:plan",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-17bf0fd4a4e780902895 -->\nCustomer Response — program.decision_requested\ndeliveryId: dlv-17bf0fd4a4e780902895\nprogram: customer-response-closure-20261007-r2\nagent: bc-a2d126c9-d6ec-5194-8871-0659610e13a7\nkind: program.decision_requested",
+  "deliveryId": "dlv-17bf0fd4a4e780902895",
+  "eventIds": [
+    "6d5e0c6ea0974beeb4e84022f5912d92"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "customer-response-closure-20261007-r2",
+  "requestId": "dec-8fd6ff05-6664-5bc7-886e-b5d1a3ed4338",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-84bf0a6b7447",
+  "summary": "Customer Response — decision requested program.decision_requested unit-review:FIX-821",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-c4e19ea3b543455eccf5 -->\nAutonomous Support — program.fallback_used\ndeliveryId: dlv-c4e19ea3b543455eccf5\nprogram: autonomous-support-20260924\nagent: bc-84a0dd3e-9b27-5e75-be34-065c5226c3f6\nkind: program.fallback_used",
+  "deliveryId": "dlv-c4e19ea3b543455eccf5",
+  "eventIds": [
+    "8dc675bda45945d9a2fc4adf7fcf43d3"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "autonomous-support-20260924",
+  "requestId": "dec-5000329b-a178-56f1-ad79-824ceba2a32a",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-39ca59c36b85",
+  "summary": "Autonomous Support — fallback used program.fallback_used unit-review:D1vz",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

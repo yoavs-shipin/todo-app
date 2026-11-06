@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-dabf3e9a72cdc759ba48 -->\nElisa Kit Dashboard Production Hardening — program.decision_resolved\ndeliveryId: dlv-dabf3e9a72cdc759ba48\nprogram: elisa-kit-dashboard-production-hardening\nagent: bc-6f5108ae-fa8f-59d0-8cf5-8e4d456f5c07\nkind: program.decision_resolved",
+  "deliveryId": "dlv-dabf3e9a72cdc759ba48",
+  "eventIds": [
+    "1640a54b66264bda85f30dbbf54bfddb"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_resolved",
+  "programId": "elisa-kit-dashboard-production-hardening",
+  "requestId": "dec-7bcc5de3-4211-5fcd-85c5-a206b334d9db",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-72fc28f97caa",
+  "summary": "Elisa Kit Dashboard Production Hardening — decision resolved program.decision_resolved plan-review:plan",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

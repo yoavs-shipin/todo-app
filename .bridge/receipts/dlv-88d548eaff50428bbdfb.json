@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-88d548eaff50428bbdfb -->\nv4-r2-recovery-canary-20261016 — program.fallback_used\ndeliveryId: dlv-88d548eaff50428bbdfb\nprogram: v4-r2-recovery-canary-20261016\nagent: v4-r2-recovery-canary-20261016\nkind: program.fallback_used",
+  "deliveryId": "dlv-88d548eaff50428bbdfb",
+  "eventIds": [
+    "v4fb-controller-handback.ga-256761da-f63f-58f1-8ff6-00ae6c5f57ea-6"
+  ],
+  "generation": "6",
+  "kind": "program.fallback_used",
+  "programId": "v4-r2-recovery-canary-20261016",
+  "requestId": "controller-handback.ga-256761da-f63f-58f1-8ff6-00ae6c5f57ea",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-e2b1116502d5",
+  "summary": "v4-r2-recovery-canary-20261016 — program.fallback_used controller-handback.ga-256761da-f63f-58f1-8ff6-00ae6c5f57ea",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

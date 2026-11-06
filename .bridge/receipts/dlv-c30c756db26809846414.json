@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-c30c756db26809846414 -->\nBridge Relay — program.decision_requested\ndeliveryId: dlv-c30c756db26809846414\nprogram: bridge-relay-20261004\nagent: bc-938d714c-2409-5729-a3f1-06e7cc4ec63f\nkind: program.decision_requested",
+  "deliveryId": "dlv-c30c756db26809846414",
+  "eventIds": [
+    "3d20f0f1bf2944719c6427723172e410"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "bridge-relay-20261004",
+  "requestId": "dec-4e9fb35b-7a52-5bac-bf49-bf6fd4855e53",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-6e9fc0033e1d",
+  "summary": "Bridge Relay — decision requested program.decision_requested program-acceptance:program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

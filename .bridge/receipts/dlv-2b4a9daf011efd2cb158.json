@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-2b4a9daf011efd2cb158 -->\ndeliveryId: dlv-2b4a9daf011efd2cb158\nprogram: v3-bidirectional-control\nagent: bc-389e8207-3708-5c06-a5ec-e5713110a20d\nkind: program.decision_requested\nrequestId: dec-7a3eaff2-f9eb-5710-aa60-7f6d47d4ff35\ntarget: post-deploy\ngeneration: 1:2\ndeadline: 2026-09-11T17:42:24Z (14 min left)\nopen ChatGPT → v3_get_review_packet dec-7a3eaff2-f9eb-5710-aa60-7f6d47d4ff35",
+  "deliveryId": "dlv-2b4a9daf011efd2cb158",
+  "eventIds": [
+    "d71d0bcc4d38459a97edc5a0dbc48c07"
+  ],
+  "generation": "1:2",
+  "kind": "program.decision_requested",
+  "programId": "v3-bidirectional-control",
+  "requestId": "dec-7a3eaff2-f9eb-5710-aa60-7f6d47d4ff35",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-28c5120ec201",
+  "summary": "requestId=dec-7a3eaff2-f9eb-5710-aa60-7f6d47d4ff35 target=post-deploy deadline=2026-09-11T17:42:24Z generation=1:2",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

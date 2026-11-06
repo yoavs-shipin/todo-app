@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-d303d0c3d2352d29ca89 -->\nPlugin Schema — program.decision_requested\ndeliveryId: dlv-d303d0c3d2352d29ca89\nprogram: plugin-schema-write-20261002\nagent: bc-510c5eff-119b-580f-b617-28995baa5064\nkind: program.decision_requested",
+  "deliveryId": "dlv-d303d0c3d2352d29ca89",
+  "eventIds": [
+    "66233a3d21c345c8bf41a61469c146c7"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "plugin-schema-write-20261002",
+  "requestId": "dec-51e4e6fa-4ced-5587-848b-6c2539f16079",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-b164f7d75bf5",
+  "summary": "Plugin Schema — decision requested program.decision_requested program-acceptance:program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

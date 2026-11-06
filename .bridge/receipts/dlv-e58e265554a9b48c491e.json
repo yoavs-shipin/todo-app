@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-e58e265554a9b48c491e -->\nLLM Middle — program.decision_requested\ndeliveryId: dlv-e58e265554a9b48c491e\nprogram: llm-middle-production-completion-20261006-r3\nagent: ga-21b5ce81-2acf-5756-a3d9-e31dbf1240bb\nkind: program.decision_requested",
+  "deliveryId": "dlv-e58e265554a9b48c491e",
+  "eventIds": [
+    "5c69c332159243a0961e92a552c14d3d"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "llm-middle-production-completion-20261006-r3",
+  "requestId": "dec-883cda9d-327a-52de-bf01-98e974b1c08f",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-51cea046d412",
+  "summary": "LLM Middle — decision requested program.decision_requested unit-review:DP-CAT: last answer rejected (test_rerun_used: one test re-run per gate cycle is already spent; submit a verdict instead); correct and resubmit before 2026-10-06T14:34:50Z",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-a0e69d0e1c5d79abc36c -->\nV3 liveness qa dup 20260918 — program.decision_requested\ndeliveryId: dlv-a0e69d0e1c5d79abc36c\nprogram: v3-liveness-qa-dup-20260918\nagent: program:v3-liveness-qa-dup-20260918\nkind: program.decision_requested",
+  "deliveryId": "dlv-a0e69d0e1c5d79abc36c",
+  "eventIds": [
+    "55ce12a20c9847b3b10b1590ab8b3373"
+  ],
+  "generation": "program:dec-89da043d-55d0-5cb6-9cc0-720b4bf098dd:1",
+  "kind": "program.decision_requested",
+  "programId": "v3-liveness-qa-dup-20260918",
+  "requestId": "dec-89da043d-55d0-5cb6-9cc0-720b4bf098dd",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-14424edefcf9",
+  "summary": "V3 liveness qa dup 20260918 — decision requested program.decision_requested program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

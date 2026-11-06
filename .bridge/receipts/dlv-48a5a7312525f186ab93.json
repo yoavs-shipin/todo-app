@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-48a5a7312525f186ab93 -->\nLocal OpenCode — program.fallback_used\ndeliveryId: dlv-48a5a7312525f186ab93\nprogram: local-opencode-20260930\nagent: ga-d914f33c-c735-5ff2-9492-51ad4170999a\nkind: program.fallback_used",
+  "deliveryId": "dlv-48a5a7312525f186ab93",
+  "eventIds": [
+    "67ad76e862b04fb7ac6581a6b9a6d384"
+  ],
+  "generation": "1:2",
+  "kind": "program.fallback_used",
+  "programId": "local-opencode-20260930",
+  "requestId": "dec-691d8936-5619-59d8-b1e7-bb168d47d60c",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-f53947fface5",
+  "summary": "Local OpenCode — fallback used program.fallback_used unit-review:HOST",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
