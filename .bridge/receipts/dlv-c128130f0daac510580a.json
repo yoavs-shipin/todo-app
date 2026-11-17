@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-c128130f0daac510580a -->\nV4 Orchestration — program.fallback_used\ndeliveryId: dlv-c128130f0daac510580a\nprogram: v4-orchestration-20261010\nagent: bc-c863c8bb-118b-5e39-91b8-f1e43c7c636d\nkind: program.fallback_used",
+  "deliveryId": "dlv-c128130f0daac510580a",
+  "eventIds": [
+    "55c5683f90db43658d74b3533622dc4b"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "v4-orchestration-20261010",
+  "requestId": "dec-72f48a7e-0748-5a46-9dfc-ba8637d4d05b",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-2e24d707040c",
+  "summary": "V4 Orchestration — fallback used program.fallback_used unit-review:C3-C4",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

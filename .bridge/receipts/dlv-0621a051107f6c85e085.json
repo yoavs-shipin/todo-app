@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-0621a051107f6c85e085 -->\nLiza — program.fallback_used\ndeliveryId: dlv-0621a051107f6c85e085\nprogram: liza-production-completion-20261011\nagent: bc-5fe42d6d-0a1c-5362-a459-a4d909948937\nkind: program.fallback_used",
+  "deliveryId": "dlv-0621a051107f6c85e085",
+  "eventIds": [
+    "25a05300afb54c4fab34f48e36dcf615"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "liza-production-completion-20261011",
+  "requestId": "dec-52750f17-0a02-5b01-bf92-d79be18893ef",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-b295e969aaa1",
+  "summary": "Liza — fallback used program.fallback_used unit-review:DP-KIT",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

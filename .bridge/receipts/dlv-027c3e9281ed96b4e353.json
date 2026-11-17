@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-027c3e9281ed96b4e353 -->\nAWS Provider Warm Routing — program.decision_requested\ndeliveryId: dlv-027c3e9281ed96b4e353\nprogram: aws-provider-warm-routing-20261002\nagent: bc-33f10a04-5c14-5317-96f7-28fa50d198a4\nkind: program.decision_requested",
+  "deliveryId": "dlv-027c3e9281ed96b4e353",
+  "eventIds": [
+    "707152c0ae8844c4bca3017829b9423d"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "aws-provider-warm-routing-20261002",
+  "requestId": "dec-3d833be9-92fb-5c5f-b2a7-bb8a42302897",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-29f2e374ab58",
+  "summary": "AWS Provider Warm Routing — decision requested program.decision_requested post-deploy",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-8e302fb36e1454203034 -->\nEcosystem Support System V4 completion — program.decision_requested\ndeliveryId: dlv-8e302fb36e1454203034\nprogram: ecosystem-support-system-v4-r2-20260918\nagent: program:ecosystem-support-system-v4-r2-20260918\nkind: program.decision_requested",
+  "deliveryId": "dlv-8e302fb36e1454203034",
+  "eventIds": [
+    "652ad78e51fa438abd05108a837fbd37"
+  ],
+  "generation": "1:2",
+  "kind": "program.decision_requested",
+  "programId": "ecosystem-support-system-v4-r2-20260918",
+  "requestId": "dec-f47c3fb3-b84f-5b16-869c-c3b9a5aba06a",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-cd16ebf652ea",
+  "summary": "Ecosystem Support System V4 completion — decision requested program.decision_requested plan-review:plan",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

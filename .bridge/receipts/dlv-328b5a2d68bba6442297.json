@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-328b5a2d68bba6442297 -->\nFullstory production completion 20260913 — program.decision_requested\ndeliveryId: dlv-328b5a2d68bba6442297\nprogram: fullstory-production-completion-20260913\nagent: bc-a0bc448e-1991-596f-a755-0670f8293a39\nkind: program.decision_requested",
+  "deliveryId": "dlv-328b5a2d68bba6442297",
+  "eventIds": [
+    "4c91857fa8394843a1e7355f171a92cb"
+  ],
+  "generation": "1:2",
+  "kind": "program.decision_requested",
+  "programId": "fullstory-production-completion-20260913",
+  "requestId": "dec-1adc1ae6-eaa3-5682-8700-8837c394dd0a",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-8e976ea40c78",
+  "summary": "Fullstory production completion 20260913 — decision requested program.decision_requested unit-review:R9",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-a84c05711959b6d0f44c -->\nV3 liveness and exactly-once recovery hardening — program.decision_requested\ndeliveryId: dlv-a84c05711959b6d0f44c\nprogram: v3-liveness-race-hardening-20260918\nagent: bc-1fd434f2-2598-537a-a59f-1555a9805bdb\nkind: program.decision_requested",
+  "deliveryId": "dlv-a84c05711959b6d0f44c",
+  "eventIds": [
+    "011181102a924ea2ba1e084ad92c69f6"
+  ],
+  "generation": "1:2",
+  "kind": "program.decision_requested",
+  "programId": "v3-liveness-race-hardening-20260918",
+  "requestId": "dec-ca192af5-f985-5fbe-b727-c842b0318f99",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-1c88da3be8b0",
+  "summary": "V3 liveness and exactly-once recovery hardening — decision requested program.decision_requested unit-review:T1",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

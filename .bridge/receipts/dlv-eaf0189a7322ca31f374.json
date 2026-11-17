@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-eaf0189a7322ca31f374 -->\nAutonomous Support — program.decision_requested\ndeliveryId: dlv-eaf0189a7322ca31f374\nprogram: autonomous-support-20260924\nagent: bc-84a0dd3e-9b27-5e75-be34-065c5226c3f6\nkind: program.decision_requested",
+  "deliveryId": "dlv-eaf0189a7322ca31f374",
+  "eventIds": [
+    "0808b1f637654ff7940390899da494a4"
+  ],
+  "generation": "remediation:D1vz:0:35d56963f8824c7b",
+  "kind": "program.decision_requested",
+  "programId": "autonomous-support-20260924",
+  "requestId": "dec-5ae829ac-aa1d-5232-9b66-8b794f1afd26",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-39ca59c36b85",
+  "summary": "Autonomous Support — decision requested program.decision_requested D1vz",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

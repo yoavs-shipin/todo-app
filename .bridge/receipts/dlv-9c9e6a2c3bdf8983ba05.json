@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-9c9e6a2c3bdf8983ba05 -->\nLiza — program.decision_requested\ndeliveryId: dlv-9c9e6a2c3bdf8983ba05\nprogram: liza-production-completion-20261011\nagent: bc-5fe42d6d-0a1c-5362-a459-a4d909948937\nkind: program.decision_requested",
+  "deliveryId": "dlv-9c9e6a2c3bdf8983ba05",
+  "eventIds": [
+    "23734e581d654a7dae6fcd3f11144b8a"
+  ],
+  "generation": "remediation:DEPLOY-VIZ:0:d8d4f47319de57ce",
+  "kind": "program.decision_requested",
+  "programId": "liza-production-completion-20261011",
+  "requestId": "dec-c549c64d-3102-5391-8d1b-baa1c7c29edb",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-b295e969aaa1",
+  "summary": "Liza — decision requested program.decision_requested DEPLOY-VIZ",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

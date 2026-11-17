@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-d8eeb26e77283e5b6102 -->\nv4-r3d-multirepo-20261016 — program.decision_requested\ndeliveryId: dlv-d8eeb26e77283e5b6102\nprogram: v4-r3d-multirepo-20261016\nagent: v4-r3d-multirepo-20261016\nkind: program.decision_requested",
+  "deliveryId": "dlv-d8eeb26e77283e5b6102",
+  "eventIds": [
+    "v4dec-review.Q1.20368cf3dc6d"
+  ],
+  "generation": "2:1:0",
+  "kind": "program.decision_requested",
+  "programId": "v4-r3d-multirepo-20261016",
+  "requestId": "review.Q1.20368cf3dc6d",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-3e2db616ae26",
+  "summary": "v4-r3d-multirepo-20261016 — decision.review review.Q1.20368cf3dc6d",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

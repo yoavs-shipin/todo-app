@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-831d71b827b9ae85eebb -->\nKernel Fastpath — program.fallback_used\ndeliveryId: dlv-831d71b827b9ae85eebb\nprogram: kernel-fastpath-20261001\nagent: bc-54e505d4-4d4d-5afb-8805-bd4a9a0d4c96\nkind: program.fallback_used",
+  "deliveryId": "dlv-831d71b827b9ae85eebb",
+  "eventIds": [
+    "a316b75635684a53931f7a0746fcf8a9"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "kernel-fastpath-20261001",
+  "requestId": "dec-62e5016e-2130-5ee8-baad-2de0d43a7435",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-eb87316b1942",
+  "summary": "Kernel Fastpath — fallback used program.fallback_used unit-review:CUTOVER",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

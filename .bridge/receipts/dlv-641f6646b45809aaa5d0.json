@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-641f6646b45809aaa5d0 -->\nGrok aws broker q1 20260918 — program.decision_requested\ndeliveryId: dlv-641f6646b45809aaa5d0\nprogram: grok-aws-broker-q1-20260918\nagent: ga-192c3729-31d7-5825-a380-4d46266172ef\nkind: program.decision_requested",
+  "deliveryId": "dlv-641f6646b45809aaa5d0",
+  "eventIds": [
+    "5743eaaaddbc4c72a2472f9377fc41e6"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "grok-aws-broker-q1-20260918",
+  "requestId": "dec-e3b8292e-a83b-5e80-9b46-9e0500ce48b8",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-7c4f44ccaf8f",
+  "summary": "Grok aws broker q1 20260918 — decision requested program.decision_requested unit-review:U1",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

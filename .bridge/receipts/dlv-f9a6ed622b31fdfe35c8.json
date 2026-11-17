@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-f9a6ed622b31fdfe35c8 -->\nv4-r2-takeover-canary-20261016 — program.decision_requested\ndeliveryId: dlv-f9a6ed622b31fdfe35c8\nprogram: v4-r2-takeover-canary-20261016\nagent: v4-r2-takeover-canary-20261016\nkind: program.decision_requested",
+  "deliveryId": "dlv-f9a6ed622b31fdfe35c8",
+  "eventIds": [
+    "v4dec-review.U2.7f0c9ba2b6b0"
+  ],
+  "generation": "1:1:0",
+  "kind": "program.decision_requested",
+  "programId": "v4-r2-takeover-canary-20261016",
+  "requestId": "review.U2.7f0c9ba2b6b0",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-8edf6bd57439",
+  "summary": "v4-r2-takeover-canary-20261016 — decision.review review.U2.7f0c9ba2b6b0",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

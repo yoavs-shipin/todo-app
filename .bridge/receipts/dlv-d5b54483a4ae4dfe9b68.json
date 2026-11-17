@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-d5b54483a4ae4dfe9b68 -->\nv4-e2e-readme-20261012 — program.decision_requested\ndeliveryId: dlv-d5b54483a4ae4dfe9b68\nprogram: v4-e2e-readme-20261012\nagent: v4-e2e-readme-20261012\nkind: program.decision_requested",
+  "deliveryId": "dlv-d5b54483a4ae4dfe9b68",
+  "eventIds": [
+    "v4dec-recover.U1.2e3f44660103"
+  ],
+  "generation": "1:1:0",
+  "kind": "program.decision_requested",
+  "programId": "v4-e2e-readme-20261012",
+  "requestId": "recover.U1.2e3f44660103",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-fc6ea402b3b0",
+  "summary": "v4-e2e-readme-20261012 — decision.recover recover.U1.2e3f44660103",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

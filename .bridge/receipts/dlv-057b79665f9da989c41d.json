@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-057b79665f9da989c41d -->\nReceiver V3 bidirectional smoke — program.decision_requested\ndeliveryId: dlv-057b79665f9da989c41d\nprogram: receiver-v3-bidirectional-smoke-20260917\nagent: program:receiver-v3-bidirectional-smoke-20260917\nkind: program.decision_requested",
+  "deliveryId": "dlv-057b79665f9da989c41d",
+  "eventIds": [
+    "c829a09a68af4b1b9f93be5ded435322"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "receiver-v3-bidirectional-smoke-20260917",
+  "requestId": "dec-ba5be0e2-2d86-5396-889f-84830cee5bba",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-2e59d79193d4",
+  "summary": "Receiver V3 bidirectional smoke — decision requested program.decision_requested program-acceptance:program",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

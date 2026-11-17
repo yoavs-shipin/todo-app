@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-cb08804e7d1c731b4f16 -->\nData Platform — program.decision_requested\ndeliveryId: dlv-cb08804e7d1c731b4f16\nprogram: data-platform-upstream-repair-20261004-r5\nagent: ga-4eee6a2b-fd00-5ea0-88b8-248bd856d22a\nkind: program.decision_requested",
+  "deliveryId": "dlv-cb08804e7d1c731b4f16",
+  "eventIds": [
+    "c7136edc5e1f4ae782e2adb60770b309"
+  ],
+  "generation": "remediation:FS-CLOSE:0:823b87bad1113a33",
+  "kind": "program.decision_requested",
+  "programId": "data-platform-upstream-repair-20261004-r5",
+  "requestId": "dec-0b0d4d17-408b-5931-9810-3d0c7873e9c2",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-ce35d92d7844",
+  "summary": "Data Platform — decision requested program.decision_requested FS-CLOSE",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

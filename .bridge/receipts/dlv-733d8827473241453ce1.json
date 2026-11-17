@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-733d8827473241453ce1 -->\nHassan CSV ecosystem augmentation — program.decision_requested\ndeliveryId: dlv-733d8827473241453ce1\nprogram: hassan-csv-ecosystem-augmentation\nagent: program:hassan-csv-ecosystem-augmentation\nkind: program.decision_requested",
+  "deliveryId": "dlv-733d8827473241453ce1",
+  "eventIds": [
+    "82d0b0931aef4fd799c247add668b92d"
+  ],
+  "generation": "1:1",
+  "kind": "program.decision_requested",
+  "programId": "hassan-csv-ecosystem-augmentation",
+  "requestId": "dec-1e54bc03-d96b-5634-99b8-0a0b51f75a47",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-708dc9380deb",
+  "summary": "Hassan CSV ecosystem augmentation — decision requested program.decision_requested plan-review:plan",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}

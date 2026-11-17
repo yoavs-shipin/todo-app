@@ -1,0 +1,15 @@
+{
+  "body": "<!-- pbl2-delivery id=dlv-c47cb7582f45030892f1 -->\nReceiver V3 bidirectional smoke — program.fallback_used\ndeliveryId: dlv-c47cb7582f45030892f1\nprogram: receiver-v3-bidirectional-smoke-20260917\nagent: program:receiver-v3-bidirectional-smoke-20260917\nkind: program.fallback_used",
+  "deliveryId": "dlv-c47cb7582f45030892f1",
+  "eventIds": [
+    "b0aff2879e8b449b997d31f579403a1f"
+  ],
+  "generation": "1:1",
+  "kind": "program.fallback_used",
+  "programId": "receiver-v3-bidirectional-smoke-20260917",
+  "requestId": "dec-bde82e8c-3140-58ab-be98-aa2bf7b9f8c1",
+  "route": "R-GH-commit",
+  "subscriptionId": "sub-2e59d79193d4",
+  "summary": "Receiver V3 bidirectional smoke — fallback used program.fallback_used plan-review:plan",
+  "writtenBy": "chatgpt-cursor-bridge[bot]"
+}
